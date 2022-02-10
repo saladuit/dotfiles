@@ -1,0 +1,184 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                     .--.  _                  #
+#    hotkeys                                         |o_o || |                 #
+#                                                    |:_/ || |_ _   ___  __    #
+#    By: djonker <djonker@student.codam.nl>         //   \ \ __| | | \ \/ /    #
+#                                                  (|     | )|_| |_| |>  <     #
+#    Created: 2021/04/30 13:17:06 by djonker      /'\_   _/`\__|\__,_/_/\_\    #
+#    Updated: 2021/05/03 02:11:55 by djonker      \___)=(___/                  #
+#                                                                              #
+# **************************************************************************** #
+
+#If you have any suggestions, Please let me know, I would love to add more
+
+ZSH
+Up and Down Arrow = Browse history matching current line
+Ctrl + A = Go to start of line
+Ctrl + B = Move 1 character back
+Ctrl + C = Cancel, Stop the current operation.
+Ctrl + D = Quit the session
+Ctrl + E = Go to end of line
+Ctrl + F = Move 1 character forward
+Ctrl + G = Nothing
+Ctrl + H = DOUBLE Delete Character before the cursor
+Ctrl + I = Nothing
+Ctrl + J = Nothing
+Ctrl + K = Remove everything behind the cursor
+Ctrl + L = clear screen
+Ctrl + M = Nothing
+Ctrl + N = Browse History matching current line
+Ctrl + O = Nothing
+Ctrl + P = Browse History matching current line
+Ctrl + Q = Quit, Types exit and presses enter.
+Ctrl + R = Search in History
+Ctrl + S = Nothing
+Ctrl + T = Nothing
+Ctrl + U = Delete everything before the cursor
+Ctrl + V = Nothing
+Ctrl + W = Delete the word before the cursor
+Ctrl + X = Nothing
+Ctrl + Y = Undo, Pretty simple
+Ctrl + Z = toggle program to background and foreground
+
+VIM
+a = Append, Enter Insert mode 1 character after the cursor
+b = Move 1 word backwards, Works with numbers
+c = Nothing
+d = Delete, Deletes a character, double press it to delete the line, also works with numbers and move commands
+e = Nothing
+f = Find, Finds a character and jumps to that position
+g = Goto, enter a line press g twice and you will jump to the line, double press it to go to the first line
+h = Left, Same function as the left arrow, but closer to your hand.
+i = Insert, Enter Insert mode on the cursor
+j = Down, Same function as the down arrow, but closer to your hand.
+k = Up, Same function as the up arrow, but closer to your hand.
+l = Right, Same function as the right arrow, but closer to your hand.
+m = Bookmark position, press m, then press another character to bind it to, use ' to go to the section
+n = Nothing
+o = Enter insert mode on a new line below the current line.
+p = Paste, Pastes the buffer after the current cursor position
+q = Record, Press a key after hitting q to start recording, do some stuff and press q again in normal mode to save the recording, then type @key to repeat the action, type 20@key to do it 20 times.
+r = Nothing
+s = Nothing
+t = Nothing
+u = Undo, Undos your previous action.
+v = Visual mode, Switch to Visual mode to select stuff character for character.
+w = Move 1 word forward, works with numbers
+x = Delete character under the cursor
+y = Yank, Or Copy in recent terms, press it once to copy the selection, press it twice to copy the entire line and include a number to copy that amount of line.
+z = Nothing
+
+A = Append, Enter insert mode at the end of the line.
+B = Move 1 whitespace backwards
+C = Nothing
+D = Nothing
+E = Nothing
+F = Find, Finds a character going backwards and jumps to that position
+G = Move to the end of the file
+H = Nothing
+I = Nothing
+J = Nothing
+K = Nothing
+L = Nothing
+M = Nothing
+N = Nothing
+O = Nothing
+P = Paste before cursor
+Q = Enter insert mode on a new line above the current line
+R = Replace Characters instead of Inserting them
+S = Nothing
+T = Nothing
+U = Nothing
+V = Visual Line mode, Select lines to edit, yank, or manipulate
+W  = Move 1 whitespace forward
+X = Nothing
+Y = Nothing
+Z = Double press it to save and exit
+
+0 = Go to beginning of line
+~ = Change case of current character
+!
+@ = enter @ and then type the letter of the recording made with q to play in
+# = Highlight the word you are standing on in the rest of the document
+$ = Go to end of line
+%
+^ = Go to the first character on the line
+&
+*
+( = Jump to previous sentence
+) = Jump to next sentence
+=
+-
+[
+]
+{ = Navigate up a codeblock
+} = Navigate down a codeblock
+' = Go to bookmark saved earlier with m
+"
+;
+:
+<
+>
+,
+.
+/ search, type, press enter and press n/N to go to the next/previous result
+?
+
+Ctrl + Arrows = Change active split
+Ctrl + A = Open new Buffer WRONG, Default increments ints
+Ctrl + B = Split window below
+Ctrl + C = Close current buffer
+Ctrl + D = Move tab to the right
+Ctrl + E = Toggles line numbers
+Ctrl + F = Find file and open it quickly
+Ctrl + G = Nothing
+Ctrl + H = Navigate around splits to the left
+Ctrl + I = Previous Tab
+Ctrl + J = Navigate around splits to below
+Ctrl + K = Navigate around splits to up
+Ctrl + L = Navigate around splits to the right
+Ctrl + M = Toggle invisible Characters
+Ctrl + N = Split window next
+Ctrl + O = Next Tab
+Ctrl + P = CtrlP Plugin
+Ctrl + Q = Quit
+Ctrl + R = Redo your previous action
+Ctrl + S = Move Tab to the left
+Ctrl + T = Toggle directory tree
+Ctrl + U = Next Buffer
+Ctrl + V = Visual Block Mode, Select a custom block of text to manipulate
+Ctrl + W = Window control hotkey
+Ctrl + X = Open Terminal WRONG, Defaul decrements ints
+Ctrl + Y = Previous Buffer
+Ctrl + Z = Places the application in the background
+
+Alt + Arrows = Resize active split
+Alt + A = Nothing
+Alt + B = Nothing
+Alt + C = Nothing
+Alt + D = Nothing
+Alt + E = Nothing
+Alt + F = Nothing
+Alt + G = Nothing
+Alt + H = Make active split smaller horizontally
+Alt + H = Nothing
+Alt + I = Nothing
+Alt + J = Nothing
+Alt + J = Make active split smaller Vertically
+Alt + K = Make active split bigger Vertically
+Alt + L = Make active split bigger horizontally
+Alt + M = Nothing
+Alt + N = Nothing
+Alt + O = Nothing
+Alt + P = Nothing
+Alt + Q = Nothing
+Alt + R = Nothing
+Alt + S = Nothing
+Alt + T = Nothing
+Alt + U = Nothing
+Alt + V = Nothing
+Alt + W = Nothing
+Alt + X = Nothing
+Alt + Y = Nothing
+Alt + Z = Nothing
