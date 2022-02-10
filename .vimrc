@@ -1,14 +1,20 @@
 " **************************************************************************** "
 "                                                                              "
 "                                                     .--.  _                  "
-"    .vimrc                                                               0    "
+"    .vimrc                                          |o_o || |                 "
 "                                                    |:_/ || |_ _   ___  __    "
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:05:46 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/02/01 16:22:28 by safoh        \___)=(___/                  "
+"    Updated: 2022/02/10 11:36:36 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
+
+
+if filereadable(expand("~/.vimrcsafoh"))
+	source ~/.vimrcsafoh
+endif
+
 
 "Activate indentation
 filetype off
@@ -27,7 +33,7 @@ set nocompatible
 set encoding=utf-8
 
 "Interpret modelines in files
-set modelines=1
+"set modelines=1
 
 "Do not abandon buffers
 set hidden
@@ -53,10 +59,6 @@ au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
 
 "Source user configuration
-if filereadable(expand("~/.myvimrc"))
-	source ~/.myvimrc
-endif
-"if filereadable(expand("~/.vimrcsafoh"))
-"	source ~/.vimrcsafoh
+"if filereadable(expand("~/.myvimrc"))
+"	source ~/.myvimrc
 "endif
-"csteenvo op slack ff doorsturen

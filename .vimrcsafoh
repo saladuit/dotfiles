@@ -13,6 +13,7 @@
 "basic
 syntax on							"enables programming syntax"
 set number							"enables numberlines"
+set rnu
 set mouse=a							"mouse support"
 set showcmd							"always shows the commandline"
 set wildmenu						"better completion"
@@ -31,8 +32,8 @@ set clipboard=unnamedplus			"clipboard management"
 set scrolloff=3						"keep 3 lines visible above/below the cursor when scrolling"
 set sidescrolloff=7					"keep 7 characters visible to the left/right of the cursor when scrolling"
 set sidescroll=1					"scroll left/right one character at a time"
-set signcolumn=number				"Displays mistakes in the numberline"
-set complete-=i
+"set signcolumn=number				"Displays mistakes in the numberline"
+set complete=i
 
 "visual
 set background=dark					"set the background color"
@@ -56,36 +57,6 @@ set nobackup						"prevents vim from creating backup files"
 set nowritebackup					"other half of above setting"
 set cmdheight=2						"fix press enter to continue"
 
-"Plug Plugins"
-call plug#begin('~/.config/nvim/autoload/plugged')
-"	Plug 'sheerun/vim-polyglot'
-"	Plug 'vim-syntastic/syntastic'
-"	Plug 'airblade/vim-gitgutter'
-"	Plug 'ycm-core/YouCompleteMe'
-"	Plug 'dense-analysis/ale'
-"	Plug 'tpope/vim-surround'
-	Plug 'vim-airline/vim-airline'
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'scrooloose/NERDTree'
-	Plug 'jiangmiao/auto-pairs'
-	Plug 'ctrlpvim/ctrlp.vim'
-	Plug 'neoclide/coc.nvim'
-	Plug 'simnalamburt/vim-mundo'
-	Plug 'preservim/nerdcommenter'
-"	Plug 'kyazdani42/nvim-web-devicons'
-	Plug 'vim-airline/vim-airline'
-	Plug 'pbondoer/vim-42header'
-	Plug 'voldikss/vim-floaterm'
-call plug#end()
-
-"Plugin settings"
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-let g:ctrlp_open_new_file='r'
-let g:ctrlp_switch_buffer = 'Et'
-let NERDTreeMapOpenInTab='<ENTER>'
-let NERDTreeMapActivateNode='<SPACE>'
-let g:airline#extensions#tabline#enabled = 1
-autocmd BufWinEnter * silent NERDTreeMirror
 
 "Keyboard Remaps"
 nnoremap <C-t> :NERDTreeToggle<CR>											"Toggles the directory tree"
@@ -103,7 +74,7 @@ nnoremap <C-n> :vs<CR>														"Vertical Split"
 nnoremap <C-b> :split<CR>													"Horizontal Split"
 nnoremap <C-x> :FloatermNew --autoclose=2 --wintype=split --height=0.3<CR>
 nnoremap <C-q> :q<CR>														"Close active buffer"
-nnoremap <C-e> :set nu! rnu!<CR>											"Toggle Number Lines"
+nnoremap <C-e> :set rnu!<CR>												"Toggle Number Lines"
 nnoremap <TAB> :setlocal list!<CR>											"Toggle Visible Tabs, Spaces, Etc."
 "nnoremap <A-up> :resize +3<CR>												"Make Bigger Horizontal"
 "nnoremap <A-down> :resize -3<CR>											"Make Smaller Horizontal"
@@ -134,23 +105,34 @@ inoremap <A-up> <Esc>:m .-2<CR>==gi
 vnoremap <A-down> :m '>+1<CR>gv=gv
 vnoremap <A-up> :m '<-2<CR>gv=gv
 
-"Custom Header"
-let g:asciiart = [
-			\"    .--.  _              ",
-			\"   |o_o || |             ",
-			\"   |:_/ || |_ _   ___  __",
-	 		\"  //   \\ \\ __| | | \\ \\/ /",
-			\" (|     | )|_| |_| |>  < ",
-			\"/\'\\_   _/`\\__|\\__,_/_/\\_\\",
-			\"\\___)=(___/              "
-			\]
 
-"let g:asciiart = [
-"			\"                         ",
-"			\"                         ",
-"			\"                         ",
-"			\"                         ",
-"			\"                         ",
-"			\"                         ",
-"			\"                         "
-"			\]
+"Plug Plugins"
+call plug#begin('~/.config/nvim/autoload/plugged')
+"	Plug 'sheerun/vim-polyglot'
+"	Plug 'vim-syntastic/syntastic'
+"	Plug 'airblade/vim-gitgutter'
+"	Plug 'ycm-core/YouCompleteMe'
+"	Plug 'dense-analysis/ale'
+"	Plug 'tpope/vim-surround'
+	Plug 'vim-airline/vim-airline'
+	Plug 'ryanoasis/vim-devicons'
+	Plug 'scrooloose/NERDTree'
+	Plug 'jiangmiao/auto-pairs'
+"	Plug 'ctrlpvim/ctrlp.vim'
+	Plug 'neoclide/coc.nvim'
+	Plug 'simnalamburt/vim-mundo'
+	Plug 'preservim/nerdcommenter'
+"	Plug 'kyazdani42/nvim-web-devicons'
+	Plug 'vim-airline/vim-airline'
+	Plug 'pbondoer/vim-42header'
+	Plug 'voldikss/vim-floaterm'
+call plug#end()
+
+"Plugin settings"
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+let g:ctrlp_open_new_file='r'
+let g:ctrlp_switch_buffer = 'Et'
+let NERDTreeMapOpenInTab='<ENTER>'
+let NERDTreeMapActivateNode='<SPACE>'
+let g:airline#extensions#tabline#enabled = 1
+autocmd BufWinEnter * silent NERDTreeMirror
