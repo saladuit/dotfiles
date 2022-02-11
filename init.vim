@@ -6,7 +6,7 @@
 "    By: marvin <marvin@42.fr>                      //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/11 17:12:45 by marvin       /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/02/11 19:17:09 by marvin       \___)=(___/                  "
+"    Updated: 2022/02/11 19:36:52 by marvin       \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
@@ -37,6 +37,7 @@ let g:ctrlp_switch_buffer = 'Et'
 let NERDTreeMapOpenInTab='<ENTER>'
 let NERDTreeMapActivateNode='<SPACE>'
 let g:airline#extensions#tabline#enabled = 1
+let NERDTreeShowLineNumbers=1
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
