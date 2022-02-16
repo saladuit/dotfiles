@@ -6,15 +6,14 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:05:46 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/02/11 19:33:21 by marvin       \___)=(___/                  "
+"    Updated: 2022/02/16 16:57:08 by marvin       \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
 
-if filereadable(expand("~/.vimrcsafoh"))
-	source ~/.vimrcsafoh
-endif
-
+"if filereadable(expand("~/.vimrcsafoh"))
+	"source ~/.vimrcsafoh
+"endif
 
 "Activate indentation
 filetype off
@@ -59,6 +58,6 @@ au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
 
 "Source user configuration
-"if filereadable(expand("~/.myvimrc"))
-"	source ~/.myvimrc
-"endif
+if filereadable(expand("~/.myvimrc"))
+	source ~/.myvimrc
+endif
