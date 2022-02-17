@@ -84,7 +84,6 @@ vnoremap <A-up> :m '<-2<CR>gv=gv
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'vim-airline/vim-airline'
 "Plug 'simnalamburt/vim-mundo' not working at the moment
-Plug 'pbondoer/vim-42header'
 Plug 'voldikss/vim-floaterm'
 Plug 'neoclide/coc.nvim' "echt nog een keer induiken
 Plug 'jiangmiao/auto-pairs'

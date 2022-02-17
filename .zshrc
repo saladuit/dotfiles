@@ -6,7 +6,7 @@
 #    By: djonker <djonker@student.codam.nl>         //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2020/10/22 22:55:54 by djonker      /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/02/10 15:48:13 by marvin       \___)=(___/                  #
+#    Updated: 2022/02/17 09:55:06 by marvin       \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,7 @@ alias gi="git init"																										#Git Init Git Directory
 alias ga="git add *"																									#Git Add All in Current Directory
 alias gc="git commit -m"																								#Git Commit Message, arguement it with "Message"
 alias gp="git push"																										#Git Push
-alias zcf="v ~/zshconfig"																								#Adjust your zsh config file
+alias zcf="v ~/.zshconfig"																								#Adjust your zsh config file
 alias vcf="v ~/vimconfig"																								#Adjust your vim config file
 alias md='mkdir -p'																										#Make Directory
 alias rmd='rm -rf'																										#Remove Directory
@@ -131,7 +131,7 @@ BWHI='\e[47m'
 NOCO="\e[m"
 
 #Custom Config File
-source ~/zshconfig
+source ~/.zshconfig
 
 #Press Ctrl + Z again to bring stuff back to the forground.
 backforeswitch () {

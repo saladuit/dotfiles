@@ -11,9 +11,9 @@
 " **************************************************************************** "
 
 
-"if filereadable(expand("~/.vimrcsafoh"))
-	"source ~/.vimrcsafoh
-"endif
+if filereadable(expand("~/.vimrcsafoh"))
+	source ~/.vimrcsafoh
+endif
 
 "Activate indentation
 filetype off
