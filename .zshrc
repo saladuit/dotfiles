@@ -3,12 +3,15 @@
 #                                                     .--.  _                  #
 #    .zshrc                                          |o_o || |                 #
 #                                                    |:_/ || |_ _   ___  __    #
-#    By: djonker <djonker@student.codam.nl>         //   \ \ __| | | \ \/ /    #
+#    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
-#    Created: 2020/10/22 22:55:54 by djonker      /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/02/17 09:55:06 by marvin       \___)=(___/                  #
+#    Created: 2022/03/02 20:39:23 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
+#    Updated: 2022/03/02 20:39:27 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
+
+# Enable vi mode
+bindkey -v
 
 #Confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -252,12 +255,6 @@ else
 	git commit -m "$1"
 	git push
 fi
-}
-
-#take = mkdir -p and cd in one
-function take() {
-	md "$1"
-	cd "$1"
 }
 
 #Fix TKL keys

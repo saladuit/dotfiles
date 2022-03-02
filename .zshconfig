@@ -6,7 +6,7 @@
 #    By: djonker <djonker@student.codam.nl>         //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2021/04/23 21:09:10 by djonker      /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/02 20:25:09 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/02 20:55:41 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,53 +25,3 @@ alias ytflac="youtube-dl -x --audio-format flac --prefer-ffmpeg" 		#Downloads yo
 alias ytmkv="youtube-dl -F" 											#Downloads youtube video in the original format
 alias lol='lolcat' 														#Pipe anything into lol to make it like a rainbow, Try "nvim | lol" for example, Requires lolcat to be installed.
 alias clearhome='echo -n "Available before:\t"; df -h | grep /Users/lde-la-h | sed '\''s/  */:/g'\'' | cut -d '\'':'\'' -f 4; unsetopt nomatch; rm -Rf ~/Library/*.42_cache_bak*; rm -Rf ~/*.42_cache_bak_*; setopt nomatch; echo -n "Available after:\t"; df -h | grep /Users/lde-la-h | sed '\''s/  */:/g'\'' | cut -d '\'':'\'' -f 4;'
-#Custom Plugins
-#if ! zgen saved
-#then
-#	zgen load marlonrichert/zsh-autocomplete
-#	zgen load b4b4r07/enhancd
-#	zgen load zpm-zsh/colorize
-#	zgen load bhayward93/Linus-rants-ZSH
-#	zgen save
-#fi
-
-#Custom Functions
-##Go wild :)
-##Also be sure to check out ~/vimconfig
-
-#Custom Hotkeys
-#bindkey '^Q' ctrlqexit
-
-:set -o vi
-#P10K Configuration
-#typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=6
-#typeset -g POWERLEVEL9K_DIR_BACKGROUND=3
-#typeset -g POWERLEVEL9K_DIR_FOREGROUND=0
-#typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=1
-#typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=1
-#typeset -g POWERLEVEL9K_STATUS_OK_FOREGROUND=0
-#typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND=3
-#typeset -g POWERLEVEL9K_STATUS_OK_PIPE_FOREGROUND=0
-#typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND=3
-#typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND=0
-#typeset -g POWERLEVEL9K_STATUS_ERROR_BACKGROUND=1
-#typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_FOREGROUND=0
-#typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_BACKGROUND=1
-#typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_BACKGROUND=1
-#typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=0
-#typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=5
-#typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=0
-#typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=4
-#typeset -g POWERLEVEL9K_ASDF_FOREGROUND=0
-#typeset -g POWERLEVEL9K_ASDF_BACKGROUND=7
-#typeset -g POWERLEVEL9K_TIME_FOREGROUND=0
-#typeset -g POWERLEVEL9K_TIME_BACKGROUND=6
-#typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=0
-#typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=5
-#typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=0
-#typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=5
-#typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=0
-#typeset -g POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND=5
-#typeset -g POWERLEVEL9K_LOAD_NORMAL_FOREGROUND=0
-#typeset -g POWERLEVEL9K_LOAD_NORMAL_BACKGROUND=5
-
