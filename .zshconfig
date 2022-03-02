@@ -6,7 +6,7 @@
 #    By: djonker <djonker@student.codam.nl>         //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2021/04/23 21:09:10 by djonker      /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2021/12/01 11:59:19 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/02 20:25:09 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ alias clearhome='echo -n "Available before:\t"; df -h | grep /Users/lde-la-h | s
 #Custom Hotkeys
 #bindkey '^Q' ctrlqexit
 
+:set -o vi
 #P10K Configuration
 #typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=6
 #typeset -g POWERLEVEL9K_DIR_BACKGROUND=3
