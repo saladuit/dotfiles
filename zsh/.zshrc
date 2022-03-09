@@ -6,9 +6,35 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/02 20:39:23 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/02 20:39:27 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/09 17:51:40 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+# Path to nvim
+export PATH="$HOME/opt/bin:$PATH"
+ZSH_THEME=random
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+ZSH_THEME_RANDOM_CANDIDATES=( "eastwood" "simple" "lukerandall" "gozilla")
+
+ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to enable command auto-correction.
+ ENABLE_CORRECTION="true"
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git vi-mode)
+
+source $ZSH/oh-my-zsh.sh
 
 # Enable vi mode
 bindkey -v
@@ -300,3 +326,4 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export HOMEBREW_GITHUB_API_TOKEN=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
