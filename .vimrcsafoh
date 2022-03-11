@@ -10,10 +10,33 @@
 "                                                                              "
 " **************************************************************************** "
 
+"Plug Plugins"
+call plug#begin('~/.config/nvim/autoload/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'pbondoer/vim-42header'
+"Plug 'simnalamburt/vim-mundo' not working at the moment
+Plug 'voldikss/vim-floaterm'
+Plug 'neoclide/coc.nvim' "echt nog een keer induiken
+Plug 'jiangmiao/auto-pairs'
+"NerdTree
+Plug 'scrooloose/NERDTree'
+Plug 'preservim/nerdcommenter'
+Plug 'ryanoasis/vim-devicons'
+"Syntastic
+Plug 'vim-syntastic/syntastic'
+"Rainbow
+Plug 'frazrepo/vim-rainbow'
+"Gruvbox
+Plug 'morhetz/gruvbox'
+"Molokai
+Plug 'tomasr/molokai'
+call plug#end()
+
 "basic
 syntax on							"enables programming syntax"
+colorscheme molokai
 set number							"enables numberlines"
-set rnu!
+set nornu
 set mouse=a							"mouse support"
 set showcmd							"always shows the commandline"
 set wildmenu"better completion"
@@ -34,7 +57,7 @@ set sidescroll=1					"scroll left/right one character at a time"
 set complete=i
 
 "visual
-set background=dark					"set the background color"
+"set background=dark					set the background color
 :setlocal list						"Shows specific characters instead of tabs, spaces, etc."
 set listchars=eol:↓,tab:··▸,trail:●,extends:…,precedes:…,space:·
 set cursorline						"shows a line under the active line"
@@ -80,23 +103,11 @@ inoremap <A-up> <Esc>:m .-2<CR>==gi
 vnoremap <A-down> :m '>+1<CR>gv=gv
 vnoremap <A-up> :m '<-2<CR>gv=gv
 
-"Plug Plugins"
-call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'vim-airline/vim-airline'
-Plug 'pbondoer/vim-42header'
-"Plug 'simnalamburt/vim-mundo' not working at the moment
-Plug 'voldikss/vim-floaterm'
-Plug 'neoclide/coc.nvim' "echt nog een keer induiken
-Plug 'jiangmiao/auto-pairs'
-"NerdTree
-Plug 'scrooloose/NERDTree'
-Plug 'preservim/nerdcommenter'
-Plug 'ryanoasis/vim-devicons'
-"Syntastic
-Plug 'vim-syntastic/syntastic'
-"Rainbow
-Plug 'frazrepo/vim-rainbow'
-call plug#end()
+" Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
+nnoremap <silent><C-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
 "NerdTree"
 autocmd BufWinEnter * silent NERDTreeMirror
