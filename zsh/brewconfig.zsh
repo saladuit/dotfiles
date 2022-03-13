@@ -6,18 +6,12 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/11 16:35:54 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/11 16:35:56 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/13 13:26:20 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
 # HOMEBREW CONFIG
 
-# Add brew to path
-export PATH=$HOME/.brew/bin:$PATH
-
-# Set Homebrew temporary folders
-export HOMEBREW_CACHE=/tmp/$USER/Homebrew/Caches
-export HOMEBREW_TEMP=/tmp/$USER/Homebrew/Temp
 
 mkdir -p $HOMEBREW_CACHE
 mkdir -p $HOMEBREW_TEMP

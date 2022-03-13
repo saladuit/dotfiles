@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:19:18 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/11 18:28:43 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/13 13:22:23 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 #
@@ -23,7 +23,10 @@ zle -N memtop
 function massmove () {
     ls > ls; paste ls ls > ren; vi ren; sed 's/^/mv /' ren|bash; rm ren ls
 }
-
+# fix for widgets can only be called when ZLE is active
+TRAPWINCH() {
+  zle && { zle reset-prompt; zle -R }
+}
 
 # Put a console clock in top right corner
 # http://www.commandlinefu.com/commands/view/7916/
