@@ -33,8 +33,9 @@ Plug 'tomasr/molokai'
 call plug#end()
 
 "basic
-syntax on							"enables programming syntax"
-colorscheme molokai
+syntax on
+:colorscheme gruvbox
+:color gruvbox
 set number							"enables numberlines"
 set nornu
 set mouse=a							"mouse support"
@@ -57,7 +58,7 @@ set sidescroll=1					"scroll left/right one character at a time"
 set complete=i
 
 "visual
-"set background=dark					set the background color
+set background=dark					"set the background color
 :setlocal list						"Shows specific characters instead of tabs, spaces, etc."
 set listchars=eol:↓,tab:··▸,trail:●,extends:…,precedes:…,space:·
 set cursorline						"shows a line under the active line"
@@ -139,6 +140,10 @@ let g:syntastic_check_on_wq = 0
 "Rainbow
 let g:rainbow_active = 1
 
+"Molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+
 "Mundo
 set undofile                        "for undo history tree"
 set undodir=~/.vim/undo             "for undo history tree"
@@ -160,13 +165,19 @@ if has("nvim-0.5.0") || has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
-	
-inoremap <silent><expr> <TAB>
-	  \ pumvisible() ? "\<C-n>" :
-	  \ <SID>check_back_space() ? "\<TAB>" :
-	  \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+	" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
 
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'

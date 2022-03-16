@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 15:35:35 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/13 13:51:37 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/16 16:38:07 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ sources+="$ZSH_CONFIG/environment.zsh"
 sources+="$ZSH_CONFIG/options.zsh"
 sources+="$ZSH_CONFIG/functions.zsh"
 sources+="$ZSH_CONFIG/aliases.zsh"
+sources+="$ZSH_CONFIG/completion.zsh"
 
 # fasd integration and config
 sources+="$ZSH_CONFIG/fasd.zsh"

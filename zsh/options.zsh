@@ -6,12 +6,11 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:25:58 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/11 18:55:55 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/16 16:56:31 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
 # shell options as history size, keyindings, etc
-
 
 # arrow up/down searches in history if line is already started
 bindkey '^[[A' up-line-or-search
