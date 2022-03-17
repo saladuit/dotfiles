@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:05:50 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/13 13:53:03 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/17 10:34:57 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ export HOMEBREW_CACHE=/tmp/$USER/Homebrew/Caches
 export HOMEBREW_TEMP=/tmp/$USER/Homebrew/Temp
 # Criterion
 export C_INCLUDE_PATH=$HOME/.brew/Cellar/criterion/2.4.0/include:$C_INCLUDE_PATH
+export PATH="/Users/safoh/.brew/opt/llvm/bin:$PATH"
 
 # History Settings
 export LESSHISTFILE=$LESS_CACHE/history
