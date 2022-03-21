@@ -6,7 +6,7 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:05:46 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/03/17 11:13:11 by safoh        \___)=(___/                  "
+"    Updated: 2022/03/21 11:50:53 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
@@ -16,7 +16,7 @@ if filereadable(expand("~/.vimrcsafoh"))
 endif
 
 if filereadable(expand("~/.vimcoc"))
-	source ~/.vimcoc
+	source ~/coc.vim
 endif
 "Activate indentation
 filetype off

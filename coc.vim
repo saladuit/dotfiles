@@ -1,23 +1,26 @@
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
+# **************************************************************************** #
+#                                                                              #
+#                                                     .--.  _                  #
+#    .vimcoc                                         |o_o || |                 #
+#                                                    |:_/ || |_ _   ___  __    #
+#    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
+#                                                  (|     | )|_| |_| |>  <     #
+#    Created: 2022/03/21 11:49:58 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
+#    Updated: 2022/03/21 11:49:59 by safoh        \___)=(___/                  #
+#                                                                              #
+# **************************************************************************** #
 
-" TextEdit might fail if hidden is not set.
-set hidden
-
+"Coc.nvim
 " Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
-
+set nobackup                        "prevents vim from creating backup files"
+set nowritebackup                   "other half of above setting"
 " Give more space for displaying messages.
-set cmdheight=2
-
+set cmdheight=2                     "fix press enter to continue"
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
-
+set updatetime=300                  "Faster Updating"
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+set shortmess+=c                    "Fixes something with completion menu"·
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -31,11 +34,11 @@ endif
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+"inoremap <silent><expr> <c-TAB>
+      "\ pumvisible() ? "\<C-n>" :
+      "\ <SID>check_back_space() ? "\<c-TAB>" :
+      "\ coc#refresh()
+"inoremap <expr><c-S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
