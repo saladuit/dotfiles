@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:19:18 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/13 13:22:23 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/25 15:52:50 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 #
@@ -17,6 +17,15 @@
 # http://www.commandlinefu.com/commands/view/7139/top-ten-memory-hogs
 memtop() {ps -eorss,args | gsort -nr | gpr -TW$COLUMNS | ghead}
 zle -N memtop
+
+# create a new script, automatically populating the shebang line, editing the script, and making it executable.
+# commandlinefu.com/commands/view/8050/
+shebang() {
+	if i=$(which $1);
+	then printf '#!%s\n\n' $i > $2 && vim + $2 && chmod 755 $2;
+	else echo "'which' could not find $1, is it in your \$PATH?";
+	fi;
+}
 
 # Rename files in a directory in an edited list fashion
 # http://www.commandlinefu.com/commands/view/7818/

@@ -30,6 +30,8 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'morhetz/gruvbox'
 "Molokai
 Plug 'tomasr/molokai'
+"Tmux nav
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 "basic
@@ -111,6 +113,11 @@ nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
+"remaps for tmux
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 "NerdTree"
 autocmd BufWinEnter * silent NERDTreeMirror
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree')   && b:NERDTree.isTabTree() | quit | endif
