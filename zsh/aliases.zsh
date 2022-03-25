@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/13 13:33:11 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/25 14:43:33 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,18 +18,18 @@ alias v="nvim"																											#Why not start Neovim a bit faster?.
 alias ls="lsd" 																											#Colorizes your ls commands complete with icons, Requires lsd to be installed.
 alias l='ls -la' 																										#If you use ls, it most likely is ls -la, why not shorten that to l?
 alias cd=' cd'
-alias ..=' cd ..; ls'
-alias ...=' cd ..; cd ..; ls'
-alias ....=' cd ..; cd ..; cd ..; ls'
+alias ..=' cd ..; l'
+alias ...=' cd ..; cd ..; l'
+alias ....=' cd ..; cd ..; cd ..; l'
+alias .....=' cd ..; cd ..; cd ..; cd ..; l'
 alias cd..='..'
 alias cd...='...'
-alias cd....='....'
+alias cd.....='.....'
 alias code='open -a "Visual Studio Code"'
 alias aedit=" $EDITOR $ZSH_CONFIG/aliases.zsh; source $ZSH_CONFIG/aliases.zsh"
 alias fedit=" $EDITOR $ZSH_CONFIG/functions.zsh; source $ZSH_CONFIG/functions.zsh"
 alias viedit=" $EDITOR $HOME/.vim/vimrc"
 alias reload='zgen update && source ~/.zshrc'																			#Reload .zshrc
-alias clearhome='echo -n "Available before:\t"; df -h | grep /Users/lde-la-h | sed '\''s/  */:/g'\'' | cut -d '\'':'\'' -f 4; unsetopt nomatch; rm -Rf ~/Library/*.42_cache_bak*; rm -Rf ~/*.42_cache_bak_*; setopt nomatch; echo -n "Available after:\t"; df -h | grep /Users/lde-la-h | sed '\''s/  */:/g'\'' | cut -d '\'':'\'' -f 4;'
 
 #git
 alias gs='git status'

@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 15:35:35 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/16 16:38:07 by safoh        \___)=(___/                  #
+#    Updated: 2022/03/25 13:54:54 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,9 +23,6 @@ sources+="$ZSH_CONFIG/completion.zsh"
 
 # fasd integration and config
 sources+="$ZSH_CONFIG/fasd.zsh"
-
-# fzf integration and config
-sources+="$ZSH_CONFIG/fzf.zsh"
 
 # brew integration and config
 sources+="$ZSH_CONFIG/brewconfig.zsh"
