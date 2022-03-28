@@ -16,7 +16,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'pbondoer/vim-42header'
 "Plug 'simnalamburt/vim-mundo' not working at the moment
 Plug 'voldikss/vim-floaterm'
-Plug 'neoclide/coc.nvim' "echt nog een keer induiken
+Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 Plug 'jiangmiao/auto-pairs'
 "NerdTree
 Plug 'scrooloose/NERDTree'
