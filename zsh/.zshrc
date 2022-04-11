@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 15:35:35 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/25 13:54:54 by safoh        \___)=(___/                  #
+#    Updated: 2022/04/11 15:07:34 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ then
 	zgen load rupa/z
 	zgen load marlonrichert/zsh-autocomplete
 	zgen load b4b4r07/enhancd
+	zgen load zsh-users/zsh-autosuggestions
 	zgen save
 fi
 
