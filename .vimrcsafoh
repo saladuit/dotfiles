@@ -32,6 +32,8 @@ Plug 'morhetz/gruvbox'
 Plug 'tomasr/molokai'
 "Tmux nav
 Plug 'christoomey/vim-tmux-navigator'
+"Rust
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 "basic

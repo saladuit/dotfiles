@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:05:50 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/17 10:34:57 by safoh        \___)=(___/                  #
+#    Updated: 2022/04/12 11:55:16 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/sbin:$PATH
+export PATH=$XDG_CONFIG_HOME/.cargo/bin:$PATH
 
 # Add brew to path
 export PATH=$HOME/.brew/bin:$PATH
@@ -46,6 +47,10 @@ export HOMEBREW_TEMP=/tmp/$USER/Homebrew/Temp
 # Criterion
 export C_INCLUDE_PATH=$HOME/.brew/Cellar/criterion/2.4.0/include:$C_INCLUDE_PATH
 export PATH="/Users/safoh/.brew/opt/llvm/bin:$PATH"
+
+# Rust
+export RUSTUP_HOME="$XDG_CONFIG_HOME/.rustup"
+export CARGO_HOME="$XDG_CONFIG_HOME/.cargo"
 
 # History Settings
 export LESSHISTFILE=$LESS_CACHE/history
