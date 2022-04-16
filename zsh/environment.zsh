@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                     .--.  _                  #
-#    environment.zsh                                 |o_o || |                 #
+#    environment.zsh                                    :+:    :+:             #
 #                                                    |:_/ || |_ _   ___  __    #
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:05:50 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/04/12 11:55:16 by safoh        \___)=(___/                  #
+#    Updated: 2022/04/16 15:01:14 by saladuit      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,7 @@ export HOMEBREW_CACHE=/tmp/$USER/Homebrew/Caches
 export HOMEBREW_TEMP=/tmp/$USER/Homebrew/Temp
 # Criterion
 export C_INCLUDE_PATH=$HOME/.brew/Cellar/criterion/2.4.0/include:$C_INCLUDE_PATH
+export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
 export PATH="/Users/safoh/.brew/opt/llvm/bin:$PATH"
 
 # Rust
