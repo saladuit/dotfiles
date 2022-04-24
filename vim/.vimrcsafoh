@@ -1,5 +1,5 @@
 " **************************************************************************** "
-"                                                                              "
+""                                                                              "
 "                                                     .--.  _                  "
 "    .myvimrc                                        |o_o || |                 "
 "                                                    |:_/ || |_ _   ___  __    "
@@ -16,7 +16,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'pbondoer/vim-42header'
 "Plug 'simnalamburt/vim-mundo' not working at the moment
 Plug 'voldikss/vim-floaterm'
-Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 "NerdTree
 Plug 'scrooloose/NERDTree'
@@ -30,8 +30,6 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'morhetz/gruvbox'
 "Molokai
 Plug 'tomasr/molokai'
-"Tmux nav
-Plug 'christoomey/vim-tmux-navigator'
 "Rust
 Plug 'rust-lang/rust.vim'
 call plug#end()
