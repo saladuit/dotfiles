@@ -28,11 +28,8 @@ sources+="$ZSH_CONFIG/fasd.zsh"
 # brew integration and config
 sources+="$ZSH_CONFIG/brewconfig.zsh"
 
-# oh-my-zsh integration and config
-sources+="$ZSH/oh-my-zsh.sh"
-
 #Zgen
-sources+="${HOME}/.zgen/zgen.zsh"
+sources+="${HOME}/.config/zsh/zgen/zgen.zsh"
 
 # try to include all sources
 foreach file (`echo $sources`)
@@ -41,7 +38,7 @@ foreach file (`echo $sources`)
     fi
 end
 
-
+source ~/.zgen/ohmyzsh/ohmyzsh-master/plugins/git/git.plugin.zsh
 if ! zgen saved
 then
 	zgen load zdharma-continuum/fast-syntax-highlighting
@@ -50,12 +47,16 @@ then
 	zgen load marlonrichert/zsh-autocomplete
 	zgen load b4b4r07/enhancd
 	zgen load zsh-users/zsh-autosuggestions
+	zgen load ohmyzsh/ohmyzsh
+	zgen load romkatv/powerlevel10k
+	zgen load Peltoche/lsd
 	zgen save
 fi
-
+ZSH_THEME="robbyrussell"
 plugins=(git vi-mode)
-
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+autoload -Uz compinit
+compinit
+source ~/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
