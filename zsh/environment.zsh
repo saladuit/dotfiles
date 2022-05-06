@@ -1,14 +1,15 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                     .--.  _                  #
+#                                                         ::::::::             #
 #    environment.zsh                                    :+:    :+:             #
-#                                                    |:_/ || |_ _   ___  __    #
-#    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
-#                                                  (|     | )|_| |_| |>  <     #
-#    Created: 2022/03/10 16:05:50 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/04/23 18:08:01 by safoh         ########   odam.nl          #
+#                                                      +:+                     #
+#    By: safoh <safoh@student.codam.nl>               +#+                      #
+#                                                    +#+                       #
+#    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
+#    Updated: 2022/05/06 15:42:11 by safoh         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
+
 
 # Basic environment settings related to the zsh compiliation (not private)
 #
@@ -20,13 +21,6 @@ export ZSH_CONFIG="$XDG_CONFIG_HOME/zsh"
 export ZSH_CACHE="$XDG_CACHE_HOME/zsh"
 export LESS_CACHE="$XDG_CACHE_HOME/less"
 mkdir -p $ZSH_CACHE
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.zgen/ohmyzsh/ohmyzsh-master/"

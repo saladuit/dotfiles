@@ -6,17 +6,18 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:05:46 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/03/28 13:33:17 by safoh        \___)=(___/                  "
+"    Updated: 2022/04/24 11:40:48 by saladuit     \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
-if filereadable(expand("~/.vimrcsafoh"))
-	source ~/.vimrcsafoh
+if filereadable(expand("~/.config/nvim/config/.vimrcsafoh"))
+	source ~/.config/nvim/config/.vimrcsafoh
 endif
 
-if filereadable(expand("~/.vimcoc"))
-	source ~/coc.vim
+if filereadable(expand("~/.config/nvim/config/rust.vim"))
+	source ~/.config/nvim/config/rust.vim
 endif
+
 "Activate indentation
 filetype off
 filetype plugin indent on
