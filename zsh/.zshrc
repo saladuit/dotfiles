@@ -46,7 +46,6 @@ foreach file (`echo $sources`)
     fi
 end
 
-source ~/.zgen/ohmyzsh/ohmyzsh-master/plugins/git/git.plugin.zsh
 if ! zgen saved
 then
 	zgen load zdharma-continuum/fast-syntax-highlighting
@@ -55,7 +54,7 @@ then
 	zgen load marlonrichert/zsh-autocomplete
 	#zgen load b4b4r07/enhancd
 	zgen load zsh-users/zsh-autosuggestions
-	zgen load ohmyzsh/ohmyzsh
+	zgen load oh-my-zsh
 	zgen load romkatv/powerlevel10k
 	zgen load Peltoche/lsd
 	zgen save
