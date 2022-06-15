@@ -10,12 +10,12 @@
 "                                                                              "
 " **************************************************************************** "
 
-if filereadable(expand("~/.config/nvim/config/.vimrcsafoh"))
-	source ~/.config/nvim/config/.vimrcsafoh
+if filereadable(expand("~/.config/vim/.vimrcsafoh"))
+	source ~/.config/vim/.vimrcsafoh
 endif
 
-if filereadable(expand("~/.config/nvim/config/rust.vim"))
-	source ~/.config/nvim/config/rust.vim
+if filereadable(expand("~/.config/vim/rust.vim"))
+	source ~/.config/vim/rust.vim
 endif
 
 "Activate indentation

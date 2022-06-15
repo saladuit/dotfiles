@@ -37,7 +37,7 @@ fi
 sources+="$ZSH/oh-my-zsh.sh"
 
 #Zgen
-sources+="${HOME}/.zgen/zgen.zsh"
+sources+="${HOME}/.config/zsh/zgen/zgen.zsh"
 
 # try to include all sources
 foreach file (`echo $sources`)
@@ -45,7 +45,6 @@ foreach file (`echo $sources`)
         source $file
     fi
 end
-
 
 if ! zgen saved
 then
@@ -55,13 +54,16 @@ then
 	zgen load marlonrichert/zsh-autocomplete
 	#zgen load b4b4r07/enhancd
 	zgen load zsh-users/zsh-autosuggestions
-	zgen load romkatv/powerlevel10k powerlevel10k
+	zgen load oh-my-zsh
+	zgen load romkatv/powerlevel10k
+	zgen load Peltoche/lsd
 	zgen save
 fi
-
+ZSH_THEME="robbyrussell"
 plugins=(git vi-mode)
-
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+autoload -Uz compinit
+compinit
+source ~/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf

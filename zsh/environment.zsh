@@ -1,14 +1,15 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                     .--.  _                  #
-#    environment.zsh                                                      0    #
-#                                                    |:_/ || |_ _   ___  __    #
-#    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
-#                                                  (|     | )|_| |_| |>  <     #
-#    Created: 2022/03/10 16:05:50 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/04/24 10:40:45 by saladuit                             0    #
+#                                                         ::::::::             #
+#    environment.zsh                                    :+:      :+:    :+:    #
+#                                                      +:+                     #
+#    By: safoh <safoh@student.codam.nl>               +#+                      #
+#                                                    +#+                       #
+#    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
+#    Updated: 2022/06/11 15:07:38 by safoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 
 # Basic environment settings related to the zsh compiliation (not private)
 #
@@ -22,7 +23,7 @@ export LESS_CACHE="$XDG_CACHE_HOME/less"
 mkdir -p $ZSH_CACHE
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.zgen/ohmyzsh/ohmyzsh-master/"
 
 # Executable search path
 export PATH=/usr/local/sbin:$PATH
@@ -38,7 +39,7 @@ export LIBRARY_PATH=~/.brew/lib:$LIBRARY_PATH
 export HOMEBREW_CACHE=/tmp/$USER/Homebrew/Caches
 export HOMEBREW_TEMP=/tmp/$USER/Homebrew/Temp
 # Criterion
-export C_INCLUDE_PATH=$HOME/.brew/Cellar/criterion/2.4.0/include:$C_INCLUDE_PATH
+export C_INCLUDE_PATH=$HOME/.brew/Cellar/criterion/2.4.1/include:$C_INCLUDE_PATH
 export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
 export PATH="/Users/safoh/.brew/opt/llvm/bin:$PATH"
 
