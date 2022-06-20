@@ -1,17 +1,17 @@
 " **************************************************************************** "
 "                                                                              "
 "                                                     .--.  _                  "
-"    .vimrc                                          |o_o || |                 "
+"    .vimrc                                             :+:      :+:    :+:    "
 "                                                    |:_/ || |_ _   ___  __    "
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:05:46 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/06/20 15:55:08 by safoh        \___)=(___/                  "
+"    Updated: 2022/06/20 23:12:11 by saladuit         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
-if filereadable(expand("~/.config/vim/.vimrcsafoh"))
-	source ~/.config/vim/.vimrcsafoh
+if filereadable(expand("~/.config/nvim/.vimrcsafoh"))
+	source ~/.config/nvim/.vimrcsafoh
 endif
 
 "Activate indentation

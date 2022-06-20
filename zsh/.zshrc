@@ -19,25 +19,27 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+source ~/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 source $HOME/.config/zsh/environment.zsh
 
 typeset -ga sources
+
+#Zgen
+sources+="${HOME}/.config/zgen/zgen.zsh"
 sources+="$ZSH_CONFIG/environment.zsh"
 sources+="$ZSH_CONFIG/options.zsh"
 sources+="$ZSH_CONFIG/functions.zsh"
 sources+="$ZSH_CONFIG/aliases.zsh"
 sources+="$ZSH_CONFIG/completion.zsh"
-
+# oh-my-zsh integration and config
+sources+="$ZSH/oh-my-zsh.sh"
 # brew integration and config
 if [ -z "${GNOME_SHELL_SESSION_MODE}" ]
 then
 	sources+="$ZSH_CONFIG/brewconfig.zsh"
 fi
-# oh-my-zsh integration and config
-sources+="$ZSH/oh-my-zsh.sh"
-
-#Zgen
-sources+="${HOME}/.config/zsh/zgen/zgen.zsh"
 
 # try to include all sources
 foreach file (`echo $sources`)
@@ -62,9 +64,3 @@ fi
 ZSH_THEME="robbyrussell"
 plugins=(git vi-mode)
 autoload -Uz compinit
-compinit
-source ~/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-if [ -f /etc/zsh.cnf ]; then
- . /etc/zsh.cnf
-fi
