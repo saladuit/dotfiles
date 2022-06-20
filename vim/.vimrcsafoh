@@ -18,34 +18,20 @@ endif
 
 "Plug Plugins
 call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'vim-airline/vim-airline'
 Plug 'pbondoer/vim-42header'
-"Plug 'simnalamburt/vim-mundo' not working at the moment
-Plug 'voldikss/vim-floaterm'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jiangmiao/auto-pairs'
-"NerdTree
-Plug 'scrooloose/NERDTree'
-Plug 'preservim/nerdcommenter'
-Plug 'ryanoasis/vim-devicons'
-"Syntastic
-Plug 'vim-syntastic/syntastic'
 "Rainbow
 Plug 'frazrepo/vim-rainbow'
 "Gruvbox
 Plug 'morhetz/gruvbox'
-"Molokai
-Plug 'tomasr/molokai'
-"Rust
-Plug 'rust-lang/rust.vim'
+Plug 'dutchen18/lsp.vim'
 call plug#end()
 
 "basic
 syntax on
-:colorscheme gruvbox
-:color gruvbox
+colorscheme gruvbox
+color gruvbox
 set number							"enables numberlines"
-set nornu
+set rnu
 set mouse=a							"mouse support"
 set showcmd							"always shows the commandline"
 set wildmenu"better completion"
@@ -58,7 +44,7 @@ set smarttab						"tt will look at the tab space"
 "editing
 set autoindent						"automatically indents based on the previous line"
 set backspace=indent,eol,start
-set nospell							"enable spellchecking"
+set spell							"enable spellchecking"
 set clipboard=unnamedplus			"clipboard management"
 set scrolloff=3						"keep 3 lines visible above/below the cursor when scrolling"
 set sidescrolloff=7					"keep 7 characters visible to the left/right of the cursor when scrolling"
@@ -67,7 +53,7 @@ set complete=i
 
 "visual
 set background=dark					"set the background color
-:setlocal list						"Shows specific characters instead of tabs, spaces, etc."
+setlocal list						"Shows specific characters instead of tabs, spaces, etc."
 set listchars=eol:↓,tab:··▸,trail:●,extends:…,precedes:…,space:·
 set cursorline						"shows a line under the active line"
 set ruler							"shows cursor coordinates in the corner"
@@ -82,86 +68,13 @@ set noshowmode						"Removes the lower line since it is in our powerbar"
 set dir=~/tmp,/tmp					"store swap files in $HOME/tmp or /tmp, whichever is available"
 
 "Keyboard Remaps"
-nnoremap <space> :NERDTreeToggle<CR>			"Toggles the directory tree"
-nnoremap <C-c> :bd<CR>							"Deletes the active buffer"
-nnoremap <C-a> :ene<CR>							"Opens a new buffer"
-nnoremap <C-i> :tabp<CR>						"Next Tab"
-nnoremap <C-o> :tabn<CR>						"Previous Tab"
-nnoremap <C-y> :bp<CR>							"Previous Buffer"
-nnoremap <C-u> :bn<CR>							"Next Buffer"
-nnoremap <C-f> :CtrlP<CR>						"File Finder"
-nnoremap <C-s> :tabm -1<CR>						"Move active tab to left"
-nnoremap <C-d> :tabm +1<CR>						"Move active tab to right"
-nnoremap <C-n> :vs<CR>							"Vertical Split"
-nnoremap <C-b> :split<CR>						"Horizontal Split"
-nnoremap <C-x> :FloatermNew --autoclose=2 --wintype=split --height=0.3<CR>
-nnoremap <C-q> :q<CR>							"Close active buffer"
 nnoremap <C-e> :set rnu!<CR>					"Toggle Number Lines"
 nnoremap <C-p> :setlocal list!<CR>				"Toggle Visible Tabs, Spaces, Etc."
-
-"Move lines with alt + h, j, k, l
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
-nnoremap <A-down> :m .+1<CR>==
-nnoremap <A-up> :m .-2<CR>==
-inoremap <A-down> <Esc>:m .+1<CR>==gi
-inoremap <A-up> <Esc>:m .-2<CR>==gi
-vnoremap <A-down> :m '>+1<CR>gv=gv
-vnoremap <A-up> :m '<-2<CR>gv=gv
-
-" Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
-nnoremap <silent><C-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
-nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
-nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
-
-"remaps for tmux
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-"NerdTree"
-autocmd BufWinEnter * silent NERDTreeMirror
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree')   && b:NERDTree.isTabTree() | quit | endif
-
-let g:ctrlp_open_new_file='r'
-let g:ctrlp_switch_buffer = 'Et'
-let NERDTreeMapOpenInTab='<ENTER>'
-let NERDTreeMapActivateNode='<SPACE>'
-let g:airline#extensions#tabline#enabled = 1
-let NERDTreeShowLineNumbers=1
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-"Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 "Rainbow
 let g:rainbow_active = 1
-
-"Molokai
-let g:molokai_original = 1
-let g:rehash256 = 1
-
-"Mundo
-set undofile                        "for undo history tree"
-set undodir=~/.vim/undo             "for undo history tree"
-
-"auto-pairs
-let g:AutoPairsFlyMode = 0
-let g:AutoPairsShortcutBackInsert = '<M-b>'
-

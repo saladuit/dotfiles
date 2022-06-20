@@ -1,21 +1,17 @@
 " **************************************************************************** "
 "                                                                              "
 "                                                     .--.  _                  "
-"    .vimrc                                          |o_o || |                 "
+"    .vimrc                                             :+:      :+:    :+:    "
 "                                                    |:_/ || |_ _   ___  __    "
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:05:46 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/04/24 11:40:48 by saladuit     \___)=(___/                  "
+"    Updated: 2022/06/20 14:30:48 by safoh            ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
 if filereadable(expand("~/.config/vim/.vimrcsafoh"))
 	source ~/.config/vim/.vimrcsafoh
-endif
-
-if filereadable(expand("~/.config/vim/rust.vim"))
-	source ~/.config/vim/rust.vim
 endif
 
 "Activate indentation
