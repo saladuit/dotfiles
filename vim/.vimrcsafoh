@@ -26,6 +26,8 @@ Plug 'morhetz/gruvbox'
 Plug 'dutchen18/lsp.vim'
 call plug#end()
 
+call lsp#clangd()
+
 "basic
 syntax on
 colorscheme gruvbox
@@ -44,7 +46,6 @@ set smarttab						"tt will look at the tab space"
 "editing
 set autoindent						"automatically indents based on the previous line"
 set backspace=indent,eol,start
-set spell							"enable spellchecking"
 set clipboard=unnamedplus			"clipboard management"
 set scrolloff=3						"keep 3 lines visible above/below the cursor when scrolling"
 set sidescrolloff=7					"keep 7 characters visible to the left/right of the cursor when scrolling"
