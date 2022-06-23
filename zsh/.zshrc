@@ -19,8 +19,8 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-source ~/.zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/.config/zgen/romkatv/powerlevel10k-master/powerlevel10k.zsh-theme
+[[ ! -f ~/repos/dotfiles/zsh/.p10k.zsh ]] || source ~/repos/dotfiles/zsh/.p10k.zsh
 
 source $HOME/.config/zsh/environment.zsh
 
@@ -54,7 +54,6 @@ then
 	zgen load djui/alias-tips
 	zgen load rupa/z
 	zgen load marlonrichert/zsh-autocomplete
-	#zgen load b4b4r07/enhancd
 	zgen load zsh-users/zsh-autosuggestions
 	zgen load oh-my-zsh
 	zgen load romkatv/powerlevel10k

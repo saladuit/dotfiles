@@ -23,7 +23,7 @@ export LESS_CACHE="$XDG_CACHE_HOME/less"
 mkdir -p $ZSH_CACHE
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.zgen/ohmyzsh/ohmyzsh-master/"
+export ZSH="$HOME/.config/zgen/ohmyzsh/ohmyzsh-master/"
 
 # Executable search path
 export PATH=/usr/local/sbin:$PATH
