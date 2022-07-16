@@ -48,6 +48,8 @@ foreach file (`echo $sources`)
     fi
 end
 
+mkdir -p ~/goinfre/docker
+
 if ! zgen saved
 then
 	zgen load zdharma-continuum/fast-syntax-highlighting
@@ -62,7 +64,7 @@ then
 fi
 ZSH_THEME="robbyrussell"
 plugins=(git vi-mode)
-autoload -Uz compinit
+# autoload -Uz compinit
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
 fi
