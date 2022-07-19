@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/07/16 19:39:47 by safoh        \___)=(___/                  #
+#    Updated: 2022/07/19 18:04:16 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ alias gc='git commit'
 alias gd='git diff'
 alias gco='git checkout '
 alias gl='git log'
+alias gcl='git clone'
 alias gr='git remote'
 alias grs='git remote show'
 alias glo='git log --pretty="oneline"'
