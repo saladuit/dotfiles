@@ -62,9 +62,7 @@ then
 	zgen load Peltoche/lsd
 	zgen save
 fi
-ZSH_THEME="robbyrussell"
-plugins=(git vi-mode)
-# autoload -Uz compinit
+
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
 fi
