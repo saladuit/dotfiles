@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         ::::::::             #
-#    environment.zsh                                    :+:      :+:    :+:    #
+#    environment.zsh                                 |o_o || |                 #
 #                                                      +:+                     #
 #    By: safoh <safoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
-#    Updated: 2022/06/11 15:07:38 by safoh            ###   ########.fr        #
+#    Updated: 2022/07/24 10:01:44 by saladuit     \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,3 +63,5 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 export KEYTIMEOUT=1
+
+unset DEBUGINFOD_URLS
