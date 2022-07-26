@@ -68,3 +68,4 @@ plugins=(git vi-mode)
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
 fi
+

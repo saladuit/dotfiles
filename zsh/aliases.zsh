@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/07/19 18:04:16 by safoh        \___)=(___/                  #
+#    Updated: 2022/07/22 16:34:16 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,8 @@ alias norme='norminette -R CheckForbiddenSourceHeader' 																	#Normine
 alias valg='gcc *.c -ggdb3 && valgrind --show-leak-kinds=all --leak-check=full --track-origins=yes ./a.out && rm a.out'	#Compiles all .c files in the current directory and runs the executable trough valgrind then deletes it.
 alias valga='gcc *.c -ggdb3 && valgrind --show-leak-kinds=all --leak-check=full --track-origins=yes ./a.out' 			#Compiles all .c files in the current directory and runs the executable trough valgrind with any arguments you give it.
 alias docker-pwd='docker run -it --rm --init -v "$PWD:/pwd" nloomans/codam sh -c "cd /pwd; bash"'
+alias francinette=/Users/safoh/francinette/tester.sh
+alias paco=/Users/safoh/francinette/tester.sh
 
 # N-Triples aliases from http://blog.datagraph.org/2010/03/grepping-ntriples
 alias rdf-count="awk '/^\s*[^#]/ { n += 1 } END { print n }'"
