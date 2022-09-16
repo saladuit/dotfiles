@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
-#    Updated: 2022/07/24 10:01:44 by saladuit     \___)=(___/                  #
+#    Updated: 2022/09/16 13:12:54 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ export LIBRARY_PATH=~/.brew/lib:$LIBRARY_PATH
 export HOMEBREW_CACHE=/tmp/$USER/Homebrew/Caches
 export HOMEBREW_TEMP=/tmp/$USER/Homebrew/Temp
 # Criterion
-export C_INCLUDE_PATH=$HOME/.brew/Cellar/criterion/2.4.1/include:$C_INCLUDE_PATH
+export C_INCLUDE_PATH="$HOME/.brew/Cellar/criterion/2.4.1_1/include":$C_INCLUDE_PATH
 export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
 export PATH="/Users/safoh/.brew/opt/llvm/bin:$PATH"
 
