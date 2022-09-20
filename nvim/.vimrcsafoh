@@ -27,6 +27,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lock
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
+"Plug 'cacharle/c_formatter_42.vim'
 call plug#end()
 
 "Netrw settings
@@ -82,6 +83,9 @@ set dir=~/tmp,/tmp					"store swap files in $HOME/tmp or /tmp, whichever is avai
 "Keyboard Remaps"
 "nnoremap <C-e> :set rnu!<CR>					"Toggle Number Lines"
 "nnoremap <C-> :setlocal list!<CR>				"Toggle Visible Tabs, Spaces, Etc."
+
+"norminette
+"let g:c_formatter_42_set_equalprg=1
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
