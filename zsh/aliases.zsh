@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/09/05 18:41:22 by safoh        \___)=(___/                  #
+#    Updated: 2022/09/23 09:33:18 by saladuit     \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ alias aedit=" $EDITOR $ZSH_CONFIG/aliases.zsh; source $ZSH_CONFIG/aliases.zsh"
 alias fedit=" $EDITOR $ZSH_CONFIG/functions.zsh; source $ZSH_CONFIG/functions.zsh"
 alias viedit=" $EDITOR $HOME/.vim/vimrc"
 alias reload='zgen update && source ~/.zshrc'																			#Reload .zshrc
-
+alias egrep='grep -E'
 #git
 alias gs='git status'
 alias ga='git add'
@@ -61,7 +61,7 @@ alias docker-pwd='docker run -it --rm --init -v "$PWD:/pwd" nloomans/codam sh -c
 alias francinette=/Users/safoh/francinette/tester.sh
 alias paco=/Users/safoh/francinette/tester.sh
 # alias norm=norminette $(git ls-tree --name-only HEAD -r | grep '\.[ch]$')
-alias norm='f(){norminette $(git ls-tree --name-only HEAD -r | grep '"'"'\.[ch]$'"'"')};f'
+# alias norm='f(){norminette $(git ls-tree --name-only HEAD -r | grep '"'"'\.[ch]$'"'"')};f'
 
 # N-Triples aliases from http://blog.datagraph.org/2010/03/grepping-ntriples
 alias rdf-count="awk '/^\s*[^#]/ { n += 1 } END { print n }'"

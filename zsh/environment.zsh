@@ -6,14 +6,14 @@
 #    By: safoh <safoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
-#    Updated: 2022/09/16 13:12:54 by safoh        \___)=(___/                  #
+#    Updated: 2022/09/23 09:57:22 by saladuit     \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
 
 # Basic environment settings related to the zsh compiliation (not private)
 #
-
+alias egrep='grep -E'
 # XDG Base Directory Specification
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -31,7 +31,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/sbin:$PATH
 export PATH=$XDG_CONFIG_HOME/.cargo/bin:$PATH
-
+export PATH=/home/saladuit/.local/share/gem/ruby/3.0.0/bin:$PATH
 # Add brew to path
 export PATH=$HOME/.brew/bin:$PATH
 export LIBRARY_PATH=~/.brew/lib:$LIBRARY_PATH
