@@ -6,12 +6,12 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/11 16:35:54 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/13 13:26:20 by safoh        \___)=(___/                  #
+#    Updated: 2022/09/23 10:49:49 by saladuit     \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
 # HOMEBREW CONFIG
-
+# need to make this file systemdependentFIXME
 
 mkdir -p $HOMEBREW_CACHE
 mkdir -p $HOMEBREW_TEMP
