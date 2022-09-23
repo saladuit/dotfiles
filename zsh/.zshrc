@@ -36,7 +36,7 @@ sources+="$ZSH_CONFIG/completion.zsh"
 # oh-my-zsh integration and config
 sources+="$ZSH/oh-my-zsh.sh"
 # brew integration and config
-if [ -z "${GNOME_SHELL_SESSION_MODE}" ]
+if [ -d "${HOME}/.brew" ]
 then
 	sources+="$ZSH_CONFIG/brewconfig.zsh"
 fi
