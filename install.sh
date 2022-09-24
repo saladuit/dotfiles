@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ln -vfs ~/repos/dotfiles/nvim/format-settings.vim ~/.config/nvim
 ln -vfs ~/repos/dotfiles/nvim/settings.vim ~/.config/nvim
 ln -vfs ~/repos/dotfiles/nvim/netrw-settings.vim ~/.config/nvim
 ln -vfs ~/repos/dotfiles/nvim/coc-settings.vim ~/.config/nvim

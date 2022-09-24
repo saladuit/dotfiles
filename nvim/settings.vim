@@ -1,12 +1,12 @@
 " **************************************************************************** "
 ""                                                                              "
 "                                                     .--.  _                  "
-"    .myvimrc                                        |o_o || |                 "
+"    settings.vim                                    |o_o || |                 "
 "                                                    |:_/ || |_ _   ___  __    "
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/02/01 16:09:42 by safoh        \___)=(___/                  "
+"    Updated: 2022/09/24 15:34:57 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
@@ -81,4 +81,8 @@ endif
 
 if filereadable(expand("~/.config/nvim/netrw-settings.vim"))
 	source ~/.config/nvim/netrw-settings.vim
+endif
+
+if filereadable(expand("~/.config/nvim/format-settings.vim"))
+	source ~/.config/nvim/format-settings.vim
 endif
