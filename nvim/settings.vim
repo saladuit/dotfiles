@@ -6,7 +6,7 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/24 15:34:57 by safoh        \___)=(___/                  "
+"    Updated: 2022/09/24 16:44:20 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
@@ -50,7 +50,6 @@ set clipboard=unnamedplus			"clipboard management"
 set scrolloff=5						"keep 3 lines visible above/below the cursor when scrolling"
 set sidescrolloff=7					"keep 7 characters visible to the left/right of the cursor when scrolling"
 set sidescroll=1					"scroll left/right one character at a time"
-set complete
 
 "visual
 set background=dark					"set the background color
@@ -61,7 +60,7 @@ set splitbelow						"split below if vertical"
 set splitright						"split to the right if horizontal"
 set t_Co=256						"sets amount of colors"
 set showtabline=0					"show tabs if multiple buffers opened"
-set noshowmode						"Removes the lower line since it is in our powerbar"
+"set noshowmode						"Removes the lower line since it is in our powerbar"
 
 "advanced
 set dir=~/tmp,/tmp					"store swap files in $HOME/tmp or /tmp, whichever is available"
