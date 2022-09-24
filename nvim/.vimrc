@@ -6,12 +6,12 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/06/23 13:20:29 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/08/30 16:06:11 by safoh        \___)=(___/                  "
+"    Updated: 2022/09/24 15:11:55 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
-if filereadable(expand("~/.config/nvim/.vimrcsafoh"))
-	source ~/.config/nvim/.vimrcsafoh
+if filereadable(expand("~/.config/nvim/settings.vim"))
+	source ~/.config/nvim/settings.vim
 endif
 
 "Activate indentation
