@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
-#    Updated: 2022/09/23 09:57:22 by saladuit     \___)=(___/                  #
+#    Updated: 2022/09/25 14:14:44 by saladuit     \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,8 +54,10 @@ export HISTSIZE=1000000			#The number of items for the internal history list
 export SAVEHIST=1000000			#Maximum number of items for the history file
 
 # 42 Header Information
-export INTRAUSER=$USER					#Change this to your Intra Username
+export INTRAUSER=safoh				#Change this to your Intra Username
 export MAIL="safoh@student.codam.nl"	#Change this to your 42 Email Adress (username@student.codam.nl for Codam Students)
+
+export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 
 export DATE=$(date +%d-%m-%Y)
 
@@ -63,5 +65,3 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 export KEYTIMEOUT=1
-
-unset DEBUGINFOD_URLS

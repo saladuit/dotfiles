@@ -28,7 +28,6 @@ typeset -ga sources
 
 #Zgen
 sources+="${HOME}/.config/zgen/zgen.zsh"
-sources+="$ZSH_CONFIG/environment.zsh"
 sources+="$ZSH_CONFIG/options.zsh"
 sources+="$ZSH_CONFIG/functions.zsh"
 sources+="$ZSH_CONFIG/aliases.zsh"
