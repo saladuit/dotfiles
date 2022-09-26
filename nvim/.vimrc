@@ -1,18 +1,16 @@
 " **************************************************************************** "
 "                                                                              "
-"                                                     .--.  _                  "
+"                                                         :::      ::::::::    "
 "    .vimrc                                          |o_o || |                 "
-"                                                    |:_/ || |_ _   ___  __    "
-"    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
-"                                                  (|     | )|_| |_| |>  <     "
-"    Created: 2022/09/26 12:59:36 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/26 12:59:39 by safoh        \___)=(___/                  "
+"                                                     +:+ +:+         +:+      "
+"    By: safoh <safoh@student.codam.nl>             +#+  +:+       +#+         "
+"                                                 +#+#+#+#+#+   +#+            "
+"    Created: 2022/09/26 13:12:05 by safoh             #+#    #+#              "
+"    Updated: 2022/09/26 13:22:19 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
-if filereadable(expand($NVIM_CONFIG))
-	source $NVIM_CONFIG/settings.vim
-endif
+source ~/repos/dotfiles/nvim/settings.vim
 
 "Activate indentation
 filetype off
@@ -56,7 +54,12 @@ set hlsearch
 au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
 
-"Source user configuration
-if filereadable(expand($MYVIMRC))
-	source ~/.myvimrc
-endif
+let s:asciiart = [
+			\"    .--.  _              ",
+			\"   |o_o || |             ",
+			\"   |:_/ || |_ _   ___  __",
+	 		\"  //   \\ \\ __| | | \\ \\/ /",
+			\" (|     | )|_| |_| |>  < ",
+			\"/\'\\_   _/`\\__|\\__,_/_/\\_\\",
+			\"\\___)=(___/              "
+			\]

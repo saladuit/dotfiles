@@ -10,7 +10,7 @@
 "                                                                              "
 " **************************************************************************** "
 
-call plug#begin(expand($NVIM_DATA))
+call plug#begin("~/.data/nvim/autoload")
 	Plug 'pbondoer/vim-42header'
 call plug#end()
 
