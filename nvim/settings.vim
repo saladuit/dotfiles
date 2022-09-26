@@ -6,18 +6,18 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/24 16:44:20 by safoh        \___)=(___/                  "
+"    Updated: 2022/09/26 10:40:49 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
-let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/repos/dotfiles/nvim/'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 "Plug Plugins
-call plug#begin('~/.config/nvim/autoload/plugged')
+call plug#begin('~/repos/dotfiles/nvim/autoload/')
 Plug 'pbondoer/vim-42header'
 "Rainbow
 Plug 'frazrepo/vim-rainbow'
@@ -27,7 +27,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lock
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
-"Plug 'cacharle/c_formatter_42.vim'
 call plug#end()
 
 "basic
@@ -74,14 +73,14 @@ map <C-l> <C-w>l
 "Rainbow
 let g:rainbow_active = 1
 
-if filereadable(expand("~/.config/nvim/coc-settings.vim"))
-	source ~/.config/nvim/coc-settings.vim
+if filereadable(expand("~/repos/dotfiles/nvim/coc-settings.vim"))
+	source ~/repos/dotfiles/nvim/coc-settings.vim
 endif
 
-if filereadable(expand("~/.config/nvim/netrw-settings.vim"))
-	source ~/.config/nvim/netrw-settings.vim
+if filereadable(expand("~/repos/dotfiles/nvim/netrw-settings.vim"))
+	source ~/repos/dotfiles/nvim/netrw-settings.vim
 endif
 
-if filereadable(expand("~/.config/nvim/format-settings.vim"))
-	source ~/.config/nvim/format-settings.vim
+if filereadable(expand("~/repos/dotfiles/nvim/format-settings.vim"))
+	source ~/repos/dotfiles/nvim/format-settings.vim
 endif
