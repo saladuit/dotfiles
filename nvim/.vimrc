@@ -11,7 +11,7 @@
 " **************************************************************************** "
 
 if filereadable(expand('~/repos/dotfiles/nvim/settings.vim'))
-source ~/repos/dotfiles/nvim/settings.vim
+	source ~/repos/dotfiles/nvim/settings.vim
 endif
 
 "Activate indentation
