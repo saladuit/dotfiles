@@ -1,12 +1,12 @@
 " **************************************************************************** "
 "                                                                              "
 "                                                     .--.  _                  "
-"    settings.vim                                       :+:      :+:    :+:    "
+"    settings.vim                                    |o_o || |                 "
 "                                                    |:_/ || |_ _   ___  __    "
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/26 13:18:30 by safoh            ###   ########.fr        "
+"    Updated: 2022/09/26 13:33:19 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
@@ -16,19 +16,6 @@ if empty(glob(data_dir . '/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
-"Plug Plugins
-call plug#begin("~/.data/nvim/autoload")
-Plug 'pbondoer/vim-42header'
-"Rainbow
-Plug 'frazrepo/vim-rainbow'
-"Gruvbox
-Plug 'morhetz/gruvbox'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-Plug 'prabirshrestha/vim-lsp'
-"Plug 'mattn/vim-lsp-settings'
-"Plug 'prabirshrestha/asyncomplete.vim'
-call plug#end()
 
 "basic
 syntax on
