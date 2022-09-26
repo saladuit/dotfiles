@@ -17,6 +17,19 @@ if empty(glob(data_dir . '/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+"Plug Plugins
+call plug#begin("~/.data/nvim/autoload")
+Plug 'pbondoer/vim-42header'
+"Rainbow
+Plug 'frazrepo/vim-rainbow'
+"Gruvbox
+Plug 'morhetz/gruvbox'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'prabirshrestha/vim-lsp'
+"Plug 'mattn/vim-lsp-settings'
+"Plug 'prabirshrestha/asyncomplete.vim'
+call plug#end()
+
 "basic
 syntax on
 colorscheme gruvbox
