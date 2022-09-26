@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
-#    Updated: 2022/09/26 12:05:43 by safoh        \___)=(___/                  #
+#    Updated: 2022/09/26 15:13:26 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,6 @@ export NVIM_CONFIG="$HOME/repos/dotfiles/nvim"
 export NVIM_DATA="$XDG_DATA_HOME/nvim/autoload"
 mkdir -p $NVIM_DATA
 export MYVIMRC="$HOME/.vimrc"
-
 # Executable search path
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH

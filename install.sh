@@ -7,10 +7,12 @@ then
 curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
 fi
 
+mkdir -p ~/.config/nvim
+ln -vfs ~/repos/dotfiles/nvim/init.vim ~/.config/nvim
+
 ln -vfs ~/repos/dotfiles/nvim/.vimrc ~/.vimrc
 ln -vfs ~/repos/dotfiles/zsh/.zshrc ~/.zshrc
 ln -vfs ~/repos/dotfiles/bash/.bashrc ~/.bashrc
-
 exec zsh
 
 sheldon init --shell zsh
