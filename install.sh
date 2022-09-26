@@ -13,7 +13,6 @@ ln -vfs ~/repos/dotfiles/nvim/init.vim ~/.config/nvim
 ln -vfs ~/repos/dotfiles/nvim/.vimrc ~/.vimrc
 ln -vfs ~/repos/dotfiles/zsh/.zshrc ~/.zshrc
 ln -vfs ~/repos/dotfiles/bash/.bashrc ~/.bashrc
-exec zsh
 
 sheldon init --shell zsh
 sheldon add fsh --github zdharma-continuum/fast-syntax-highlighting

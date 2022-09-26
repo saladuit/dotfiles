@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         ::::::::             #
-#    environment.zsh                                 |o_o || |                 #
+#    environment.zsh                                    :+:      :+:    :+:    #
 #                                                      +:+                     #
 #    By: safoh <safoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
-#    Updated: 2022/09/26 15:13:26 by safoh        \___)=(___/                  #
+#    Updated: 2022/09/26 15:34:38 by safoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,9 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/sbin:$PATH
-export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
+
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
 
 # perl config
 PATH="/home/saladuit/perl5/bin${PATH:+:${PATH}}"; export PATH;
