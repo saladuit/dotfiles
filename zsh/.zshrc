@@ -40,3 +40,5 @@ end
 
 eval "$(sheldon source)"
 
+
+alias cclean='bash ~/Cleaner_42.sh'
