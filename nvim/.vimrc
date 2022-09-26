@@ -6,7 +6,7 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/06/23 13:20:29 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/26 14:54:49 by safoh        \___)=(___/                  "
+"    Updated: 2022/09/26 17:40:08 by safoh            ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -67,6 +67,6 @@ let s:asciiart = [
 			\]
 
 "Source user configuration
-if filereadable(expand('~/.myvimrc'))
-	source ~/.myvimrc
-endif
+"if filereadable(expand('~/.myvimrc'))
+"	source ~/.myvimrc
+"endif
