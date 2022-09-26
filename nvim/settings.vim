@@ -10,17 +10,16 @@
 "                                                                              "
 " **************************************************************************** "
 
-let data_dir = "~/.data/nvim/autoload"
-if empty(glob(data_dir . '/plug.vim'))
-	execute '!echo '.data_dir
-  silent execute '!curl -fLo '.data_dir.'/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 "Plug Plugins
-call plug#begin("~/.data/nvim/autoload")
+call plug#begin()
 Plug 'pbondoer/vim-42header'
-"Rainbow
+"Rainbo
 Plug 'frazrepo/vim-rainbow'
 "Gruvbox
 Plug 'morhetz/gruvbox'
