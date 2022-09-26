@@ -1,12 +1,12 @@
 " **************************************************************************** "
 "                                                                              "
-"                                                         :::      ::::::::    "
-"    .vimrc                                          |o_o || |                 "
-"                                                     +:+ +:+         +:+      "
-"    By: safoh <safoh@student.codam.nl>             +#+  +:+       +#+         "
-"                                                 +#+#+#+#+#+   +#+            "
-"    Created: 2022/09/26 13:12:05 by safoh             #+#    #+#              "
-"    Updated: 2022/09/26 13:22:19 by safoh        \___)=(___/                  "
+"                                                     .--.  _                  "
+"    .vimrc                                             :+:      :+:    :+:    "
+"                                                    |:_/ || |_ _   ___  __    "
+"    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
+"                                                  (|     | )|_| |_| |>  <     "
+"    Created: 2022/06/23 13:20:29 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
+"    Updated: 2022/09/26 14:41:49 by safoh            ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -54,6 +54,10 @@ set hlsearch
 au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
 
+"Source user configuration
+if filereadable(expand('~/.myvimrc'))
+	source ~/.myvimrc
+endif
 let s:asciiart = [
 			\"    .--.  _              ",
 			\"   |o_o || |             ",

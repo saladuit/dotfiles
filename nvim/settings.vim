@@ -10,21 +10,15 @@
 "                                                                              "
 " **************************************************************************** "
 
-let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
-if empty(glob(data_dir . '/autoload/plug.vim'))
-  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
 "Plug Plugins
-call plug#begin()
+call plug#begin('~/.data/nvim/')
 Plug 'pbondoer/vim-42header'
-"Rainbo
+"Rainbow
 Plug 'frazrepo/vim-rainbow'
 "Gruvbox
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-Plug 'prabirshrestha/vim-lsp'
+"Plug 'prabirshrestha/vim-lsp'
 "Plug 'mattn/vim-lsp-settings'
 "Plug 'prabirshrestha/asyncomplete.vim'
 call plug#end()
@@ -73,6 +67,8 @@ map <C-l> <C-w>l
 "Rainbow
 let g:rainbow_active = 1
 
-source ~/repos/dotfiles/nvim/coc-settings.vim
-source ~/repos/dotfiles/nvim/netrw-settings.vim
-source ~/repos/dotfiles/nvim/format-settings.vim
+if filereadable(expand($NVIM_CONFIG))
+	source $NVIM_CONFIG/coc-settings.vim
+	source $NVIM_CONFIG/netrw-settings.vim
+	source $NVIM_CONFIG/format-settings.vim
+endif
