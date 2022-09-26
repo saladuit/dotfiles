@@ -6,12 +6,12 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/06/23 13:20:29 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/26 10:16:32 by safoh        \___)=(___/                  "
+"    Updated: 2022/09/26 12:18:35 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
-if filereadable(expand("~/repos/dotfiles/nvim/settings.vim"))
-	source ~/repos/dotfiles/nvim/settings.vim
+if filereadable(expand($NVIM_CONFIG))
+	source $NVIM_CONFIG/settings.vim
 endif
 
 "Activate indentation
@@ -25,7 +25,7 @@ set shiftwidth=4
 set noexpandtab
 
 "Disable vi-compatibility
-set nocompatible
+"set nocompatible
 
 "Real-world encoding
 set encoding=utf-8
@@ -57,6 +57,6 @@ au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
 
 "Source user configuration
-if filereadable(expand("~/.myvimrc"))
+if filereadable(expand($MYVIMRC))
 	source ~/.myvimrc
 endif

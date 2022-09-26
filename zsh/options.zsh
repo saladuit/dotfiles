@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:25:58 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/16 22:06:36 by safoh        \___)=(___/                  #
+#    Updated: 2022/09/26 11:29:51 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,13 +15,6 @@
 # arrow up/down searches in history if line is already started
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
-
-#Fix TKL keys
-#bindkey  "^[[H"   beginning-of-line
-#bindkey  "^[[F"   end-of-line
-#bindkey  "^[[3~"  delete-char
-#bindkey  "^[[5~"  beginning-of-line
-#bindkey  "^[[6~"  end-of-line
 
 #vim controls
 bindkey -v

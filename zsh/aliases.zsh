@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/09/23 09:33:18 by saladuit     \___)=(___/                  #
+#    Updated: 2022/09/26 11:31:15 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ alias code='open -a "Visual Studio Code"'
 alias aedit=" $EDITOR $ZSH_CONFIG/aliases.zsh; source $ZSH_CONFIG/aliases.zsh"
 alias fedit=" $EDITOR $ZSH_CONFIG/functions.zsh; source $ZSH_CONFIG/functions.zsh"
 alias viedit=" $EDITOR $HOME/.vim/vimrc"
-alias reload='zgen update && source ~/.zshrc'																			#Reload .zshrc
+alias reload='sheldon source && source ~/.zshrc'																			#Reload .zshrc
 alias egrep='grep -E'
 #git
 alias gs='git status'
