@@ -67,6 +67,6 @@ map <C-l> <C-w>l
 "Rainbow
 let g:rainbow_active = 1
 
-source ~/repos/dotfiles/nvim/coc-settings.vim
-source ~/repos/dotfiles/nvim/netrw-settings.vim
-source ~/repos/dotfiles/nvim/format-settings.vim
+"source ~/repos/dotfiles/nvim/coc-settings.vim
+"source ~/repos/dotfiles/nvim/netrw-settings.vim
+"source ~/repos/dotfiles/nvim/format-settings.vim

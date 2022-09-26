@@ -17,16 +17,16 @@ source $HOME/repos/dotfiles/zsh/environment.zsh
 
 typeset -ga sources
 
-#Zgen
 sources+="$ZSH_CONFIG/options.zsh"
 sources+="$ZSH_CONFIG/functions.zsh"
 sources+="$ZSH_CONFIG/aliases.zsh"
 sources+="$ZSH_CONFIG/completion.zsh"
-# oh-my-zsh integration and config
-#sources+="$ZSH/oh-my-zsh.sh"
+
 # brew integration and config
 if [ -d "${HOME}/.brew" ]
 then
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+	[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 	sources+="$ZSH_CONFIG/brewconfig.zsh"
 	mkdir -p ~/goinfre/docker
 fi
@@ -39,3 +39,4 @@ foreach file (`echo $sources`)
 end
 
 eval "$(sheldon source)"
+
