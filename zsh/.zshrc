@@ -13,7 +13,7 @@
 
 # the main RC file (will be linked to ~/.zshrc)
 #
-source $HOME/.config/zsh/environment.zsh
+source $ZSH_CONFIG/environment.zsh
 
 typeset -ga sources
 
