@@ -6,12 +6,12 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/26 13:33:19 by safoh        \___)=(___/                  "
+"    Updated: 2022/09/26 14:50:20 by safoh            ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
 "Plug Plugins
-call plug#begin('~/.data/nvim/')
+call plug#begin('~/.data/nvim/autoload')
 Plug 'pbondoer/vim-42header'
 "Rainbow
 Plug 'frazrepo/vim-rainbow'
@@ -67,8 +67,6 @@ map <C-l> <C-w>l
 "Rainbow
 let g:rainbow_active = 1
 
-if filereadable(expand($NVIM_CONFIG))
-	source $NVIM_CONFIG/coc-settings.vim
-	source $NVIM_CONFIG/netrw-settings.vim
-	source $NVIM_CONFIG/format-settings.vim
-endif
+source ~/repos/dotfiles/nvim/coc-settings.vim
+source ~/repos/dotfiles/nvim/netrw-settings.vim
+source ~/repos/dotfiles/nvim/format-settings.vim

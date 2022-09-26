@@ -1,16 +1,18 @@
 " **************************************************************************** "
 "                                                                              "
 "                                                     .--.  _                  "
-"    .vimrc                                             :+:      :+:    :+:    "
+"    .vimrc                                          |o_o || |                 "
 "                                                    |:_/ || |_ _   ___  __    "
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/06/23 13:20:29 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/26 14:41:49 by safoh            ###   ########.fr        "
+"    Updated: 2022/09/26 14:54:49 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
+if filereadable(expand('~/repos/dotfiles/nvim/settings.vim'))
 source ~/repos/dotfiles/nvim/settings.vim
+endif
 
 "Activate indentation
 filetype off
@@ -54,10 +56,6 @@ set hlsearch
 au BufWrite /private/tmp/crontab.* set nowritebackup
 au BufWrite /private/etc/pw.* set nowritebackup
 
-"Source user configuration
-if filereadable(expand('~/.myvimrc'))
-	source ~/.myvimrc
-endif
 let s:asciiart = [
 			\"    .--.  _              ",
 			\"   |o_o || |             ",
@@ -67,3 +65,8 @@ let s:asciiart = [
 			\"/\'\\_   _/`\\__|\\__,_/_/\\_\\",
 			\"\\___)=(___/              "
 			\]
+
+"Source user configuration
+if filereadable(expand('~/.myvimrc'))
+	source ~/.myvimrc
+endif
