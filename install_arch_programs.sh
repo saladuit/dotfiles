@@ -4,7 +4,7 @@ pacman -Syu
 pacman -S git calibre guake gnome-calculator nautilus gnome-system-monitor gnome-tweaks \
 	noto-fonts-emoji gimp neofetch zsh nvidia nvidia-utils nvidia-prime nvidia-settings \
 	lib32-nvidia-utils libvdpau libxnvctrl vulkan-icd-loader lib32-vulkan-icd-loader \
-	keepassxc neovim gitkraken valgrind gdb
+	keepassxc neovim gitkraken valgrind gdb lsd
 
 cd
 mkdir -p ~/repos/installation

@@ -7,3 +7,6 @@ curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh | b
 ln -vfs ~/repos/dotfiles/nvim/.vimrc ~/.vimrc
 ln -vfs ~/repos/dotfiles/zsh/.zshrc ~/.zshrc
 ln -vfs ~/repos/dotfiles/bash/.bashrc ~/.bashrc
+exec zsh
+sheldon init --shell zsh
+sheldon add fsh --github zdharma-continuum/fast-syntax-highlighting
