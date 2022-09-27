@@ -42,3 +42,6 @@ eval "$(sheldon source)"
 
 
 alias cclean='bash ~/Cleaner_42.sh'
+if [ -f /etc/zsh.cnf ]; then
+ . /etc/zsh.cnf
+fi
