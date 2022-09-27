@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/09/26 11:31:15 by safoh        \___)=(___/                  #
+#    Updated: 2022/09/27 18:13:16 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,6 +73,12 @@ alias rdf-subjects="awk '/^\s*[^#]/ { print \$1 }' | uniq"
 alias rdf-predicates="awk '/^\s*[^#]/ { print \$2 }' | uniq"
 alias rdf-objects="awk '/^\s*[^#]/ { ORS=\"\"; for (i=3;i<=NF-1;i++) print \$i \" \"; print \"\n\" }' | uniq"
 alias rdf-datatypes="awk -F'\x5E' '/\"\^\^</ { print substr(\$3, 2, length(\$3)-4) }' | uniq"
+
+if [ -f "~/Cleaner_42.sh" ]
+then
+	#Codam specific
+	alias cclean='bash ~/Cleaner_42.sh'
+fi
 
 #Miscellaneous
 alias allcolor='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'	#Show all the terminal colors for your current theme

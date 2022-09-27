@@ -24,6 +24,7 @@ sheldon add z --github rupa/z
 sheldon add zsh-autocomplete --github marlonrichert/zsh-autocomplete
 sheldon add zsh-autosuggestions --github zsh-users/zsh-autosuggestions
 sheldon add oh-my-zsh --github ohmyzsh/ohmyzsh
+sheldon add pure --github sindresorhus/pure --use async.zsh pure.zsh
 
 exec zsh
 # coc-clangd coc-json
