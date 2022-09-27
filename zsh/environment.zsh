@@ -1,15 +1,14 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                         ::::::::             #
-#    environment.zsh                                    :+:      :+:    :+:    #
-#                                                      +:+                     #
-#    By: safoh <safoh@student.codam.nl>               +#+                      #
-#                                                    +#+                       #
-#    Created: 2022/05/06 15:41:40 by safoh         #+#    #+#                  #
-#    Updated: 2022/09/26 15:34:38 by safoh            ###   ########.fr        #
+#                                                     .--.  _                  #
+#    environment.zsh                                 |o_o || |                 #
+#                                                    |:_/ || |_ _   ___  __    #
+#    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
+#                                                  (|     | )|_| |_| |>  <     #
+#    Created: 2022/09/27 14:02:47 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
+#    Updated: 2022/09/27 15:31:07 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
-
 
 # Basic environment settings related to the zsh compiliation (not private)
 #
@@ -36,7 +35,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/sbin:$PATH
-
+export PATH=$HOME/.brew/Cellar/llvm/15.0.0/bin/clangd:$PATH
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 
@@ -74,5 +73,3 @@ export MAIL="safoh@student.codam.nl"	#Change this to your 42 Email Adress (usern
 export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 export DATE=$(date +%d-%m-%Y)
 export EDITOR="nvim"
-
-#export KEYTIMEOUT=1

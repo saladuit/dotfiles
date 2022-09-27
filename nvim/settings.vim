@@ -6,27 +6,25 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/09/26 14:50:20 by safoh            ###   ########.fr        "
+"    Updated: 2022/09/27 15:48:51 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
 "Plug Plugins
 call plug#begin('~/.data/nvim/autoload')
-Plug 'pbondoer/vim-42header'
-"Rainbow
-Plug 'frazrepo/vim-rainbow'
-"Gruvbox
-Plug 'morhetz/gruvbox'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-"Plug 'prabirshrestha/vim-lsp'
-"Plug 'mattn/vim-lsp-settings'
-"Plug 'prabirshrestha/asyncomplete.vim'
+	Plug 'pbondoer/vim-42header'
+	"Rainbow
+	Plug 'frazrepo/vim-rainbow'
+	"Gruvbox
+	Plug 'morhetz/gruvbox'
+	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 call plug#end()
 
 "basic
 syntax on
 colorscheme gruvbox
 color gruvbox
+set number
 set rnu							"enables reslative numberlines"
 set showcmd							"always shows the commandline"
 set wildmenu						"better completion"
@@ -67,6 +65,6 @@ map <C-l> <C-w>l
 "Rainbow
 let g:rainbow_active = 1
 
-"source ~/repos/dotfiles/nvim/coc-settings.vim
-"source ~/repos/dotfiles/nvim/netrw-settings.vim
-"source ~/repos/dotfiles/nvim/format-settings.vim
+source ~/repos/dotfiles/nvim/coc-settings.vim
+source ~/repos/dotfiles/nvim/netrw-settings.vim
+source ~/repos/dotfiles/nvim/format-settings.vim
