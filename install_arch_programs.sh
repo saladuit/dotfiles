@@ -4,7 +4,7 @@ pacman -Syu
 pacman -S git calibre guake gnome-calculator nautilus gnome-system-monitor gnome-tweaks \
 	noto-fonts-emoji gimp neofetch zsh nvidia nvidia-utils nvidia-prime nvidia-settings \
 	lib32-nvidia-utils libvdpau libxnvctrl vulkan-icd-loader lib32-vulkan-icd-loader \
-	keepassxc neovim gitkraken valgrind gdb lsd python-pynvim ruby xclip
+	keepassxc neovim gitkraken valgrind gdb lsd python-pynvim ruby xclip python-pip
 
 cd
 mkdir -p ~/repos/installation
@@ -31,6 +31,7 @@ sudo pacman -S pacman-contrib
 sensors-detect
 systemctl enable bluetooth
 gem install neovimm
+pip install compiledb
 sudo npm install -g neovim
 sudo cpan install Neovim::Ext
 pacman -Syyuu
