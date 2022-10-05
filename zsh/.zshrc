@@ -18,6 +18,7 @@ source $ZSH_CONFIG/options.zsh
 source $ZSH_CONFIG/functions.zsh
 source $ZSH_CONFIG/aliases.zsh
 source $ZSH_CONFIG/completion.zsh
+source $ZSH_CONFIG/pure.zsh
 
 # brew integration and config
 if [ -d "${HOME}/.brew" ]
