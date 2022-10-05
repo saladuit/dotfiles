@@ -27,4 +27,6 @@ sheldon add oh-my-zsh --github ohmyzsh/ohmyzsh
 sheldon add pure --github sindresorhus/pure --use async.zsh pure.zsh
 
 exec zsh
+zstyle :prompt:pure:git:branch color green
+zstyle :prompt:pure:path color cyan
 # coc-clangd coc-json
