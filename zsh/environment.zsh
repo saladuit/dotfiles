@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/09/27 14:02:47 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/09/27 15:31:07 by safoh        \___)=(___/                  #
+#    Updated: 2022/10/05 15:12:14 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ then
 	# Criterion
 	export C_INCLUDE_PATH="$HOME/.brew/Cellar/criterion/2.4.1_1/include":$C_INCLUDE_PATH
 	export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
-	export PATH="/Users/safoh/.brew/opt/llvm/bin:$PATH"
+	export PATH="/Users/$USER/.brew/opt/llvm/bin:$PATH"
 fi
 
 # History Settings
