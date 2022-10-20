@@ -59,7 +59,10 @@ then
 	export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
 	export PATH="/Users/$USER/.brew/opt/llvm/bin:$PATH"
 fi
-
+if [ -d "/opt/homebrew/bin" ]
+then 
+export PATH=/opt/homebrew/bin/:$PATH
+fi
 # History Settings
 export LESSHISTFILE=$LESS_CACHE/less_history
 export HISTFILE=$ZSH_CACHE/zsh_history	#History File Location
