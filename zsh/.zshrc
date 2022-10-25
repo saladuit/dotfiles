@@ -32,3 +32,5 @@ eval "$(sheldon source)"
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
 fi
+
+alias knisper-cli=/Users/saladin/knisper/bin/knisper-cli.sh
