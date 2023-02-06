@@ -116,3 +116,5 @@ function __setprompt
 }
 PROMPT_COMMAND='__setprompt'
 . "$HOME/.cargo/env"
+
+alias knisper-cli=/Users/saladin/.local/knisper/bin/knisper-cli.sh

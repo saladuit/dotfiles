@@ -1,12 +1,12 @@
 " **************************************************************************** "
 "                                                                              "
 "                                                     .--.  _                  "
-"    settings.vim                                    |o_o || |                 "
+"    settings.vim                                       :+:      :+:    :+:    "
 "                                                    |:_/ || |_ _   ___  __    "
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/10/05 13:52:03 by safoh        \___)=(___/                  "
+"    Updated: 2023/01/30 21:15:54 by saladin          ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -18,6 +18,9 @@ call plug#begin('~/.data/nvim/autoload')
 	"Gruvbox
 	Plug 'morhetz/gruvbox'
 	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+	Plug 'igankevich/mesonic'
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'Shatur/neovim-cmake'
 call plug#end()
 
 "basic
