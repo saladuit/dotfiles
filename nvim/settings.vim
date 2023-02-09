@@ -6,7 +6,7 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2022/10/05 13:52:03 by safoh        \___)=(___/                  "
+"    Updated: 2023/02/09 12:06:56 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
@@ -25,6 +25,7 @@ syntax on
 colorscheme gruvbox
 color gruvbox
 set nocompatible
+
 set number
 set rnu							"enables reslative numberlines"
 set showcmd							"always shows the commandline"
@@ -34,6 +35,7 @@ set spelllang=en_uk					"set language for spellchecking"
 set confirm							"asks to save when closing a file"
 set nowrap							"display lines longer than the width as one line"
 set smarttab						"tt will look at the tab space"
+
 "editing
 set autoindent						"automatically indents based on the previous line"
 set backspace=indent,eol,start

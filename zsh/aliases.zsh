@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/09/27 18:13:16 by safoh        \___)=(___/                  #
+#    Updated: 2023/02/09 14:50:04 by safoh        \___)=(___/                  #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,8 @@ alias compra='gcc -Wall -Wextra -Werror *.c && ./a.out' 																#compile
 alias norme='norminette -R CheckForbiddenSourceHeader' 																	#Norminette alias with the old flags. (That may or may not be used)
 alias valg='gcc *.c -ggdb3 && valgrind --show-leak-kinds=all --leak-check=full --track-origins=yes ./a.out && rm a.out'	#Compiles all .c files in the current directory and runs the executable trough valgrind then deletes it.
 alias valga='gcc *.c -ggdb3 && valgrind --show-leak-kinds=all --leak-check=full --track-origins=yes ./a.out' 			#Compiles all .c files in the current directory and runs the executable trough valgrind with any arguments you give it.
-alias docker-pwd='docker run -it --rm --init -v "$PWD:/pwd" nloomans/codam sh -c "cd /pwd; bash"'
+# docker build -t better_valgrind . //to buld a new version
+alias docker-pwd='docker run -it --rm --init -v "$PWD:/pwd" better_valgrind sh -c "cd /pwd; bash"'
 alias francinette=/Users/safoh/francinette/tester.sh
 alias paco=/Users/safoh/francinette/tester.sh
 # alias norm=norminette $(git ls-tree --name-only HEAD -r | grep '\.[ch]$')
