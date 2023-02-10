@@ -6,7 +6,7 @@
 "    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    "
 "                                                  (|     | )|_| |_| |>  <     "
 "    Created: 2022/02/01 16:06:33 by safoh        /'\_   _/`\__|\__,_/_/\_\    "
-"    Updated: 2023/02/09 12:06:56 by safoh        \___)=(___/                  "
+"    Updated: 2023/02/10 14:57:01 by safoh        \___)=(___/                  "
 "                                                                              "
 " **************************************************************************** "
 
@@ -18,6 +18,7 @@ call plug#begin('~/.data/nvim/autoload')
 	"Gruvbox
 	Plug 'morhetz/gruvbox'
 	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+    Plug 'dawnbeen/c_formatter_42.vim'
 call plug#end()
 
 "basic

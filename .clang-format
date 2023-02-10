@@ -1,0 +1,71 @@
+Language: Cpp
+
+# BasedOnStyle: LLVM
+BasedOnStyle:  Google
+
+# Align
+AlignAfterOpenBracket: DontAlign
+AlignArrayOfStructures: Left
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros: Consecutive
+AlignEscapedNewlines: Left
+AlignOperands: false
+AlignTrailingComments: true
+PointerAlignment: Right
+QualifierAlignment: Left
+
+# Braces
+BreakBeforeBraces: Allman
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+BreakBeforeBraces: Allman
+BreakBeforeTernaryOperators: true
+
+# Indentation
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+
+# Line wrapping
+# ColumnLimit: 0
+ColumnLimit: 80
+
+# Indentation
+IndentCaseLabels: false
+IndentWrappedFunctionNames: false
+
+# Spaces
+SpaceAfterCStyleCast: false
+SpaceAroundPointerQualifiers: After
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeSquareBrackets: false
+SpaceBeforeParens: ControlStatements
+SpacesBeforeTrailingComments: 1
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpacesInSquareBrackets: false
+SpacesInParentheses: false
+
+# Shorts
+AllowShortFunctionsOnASingleLine: None
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+
+# Empty Lines
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+
+# Penalties
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakString: 1
+PenaltyExcessCharacter: 10
+PenaltyReturnTypeOnItsOwnLine: 100
+
+# Miscellanious
+# FixNamespaceComments: false
+IncludeBlocks: Merge
+Cpp11BracedListStyle: true
+#InsertTrailingCommas: Wrapped
+BinPackArguments: false
+BinPackParameters: false
