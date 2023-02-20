@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                     .--.  _                  #
-#    environment.zsh                                 |o_o || |                 #
+#    environment.zsh                                    :+:      :+:    :+:    #
 #                                                    |:_/ || |_ _   ___  __    #
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/09/27 14:02:47 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/10/05 15:12:14 by safoh        \___)=(___/                  #
+#    Updated: 2023/02/06 12:44:15 by saladin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/sbin:$PATH
-export PATH=$HOME/.brew/Cellar/llvm/15.0.0/bin/clangd:$PATH
+export PATH=$HOME/.brew/Cellar/llvm/15.0.7/bin/clangd:$PATH
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 
