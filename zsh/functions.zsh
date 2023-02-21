@@ -1,17 +1,27 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                     .--.  _                  #
-#    functions.zsh                                   |o_o || |                 #
+#    functions.zsh                                      :+:      :+:    :+:    #
 #                                                    |:_/ || |_ _   ___  __    #
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/10 16:19:18 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2022/03/25 15:52:50 by safoh        \___)=(___/                  #
+#    Updated: 2023/02/21 15:11:28 by saladin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #
 # functions and key bindings to that functions
 #
+# useful only for Mac OS Silicon M1, 
+# still working but useless for the other platforms
+
+docker() {
+ if [[ `uname -m` == "arm64" ]] && [[ "$1" == "run" || "$1" == "build" ]]; then
+    /usr/local/bin/docker "$1" --platform linux/amd64 "${@:2}"
+  else
+     /usr/local/bin/docker "$@"
+  fi
+}
 
 # Top ten memory hogs
 # http://www.commandlinefu.com/commands/view/7139/top-ten-memory-hogs
