@@ -6,7 +6,7 @@
 #    By: safoh <safoh@student.codam.nl>             //   \ \ __| | | \ \/ /    #
 #                                                  (|     | )|_| |_| |>  <     #
 #    Created: 2022/03/13 13:33:10 by safoh        /'\_   _/`\__|\__,_/_/\_\    #
-#    Updated: 2023/02/21 13:52:34 by saladin          ###   ########.fr        #
+#    Updated: 2023/02/21 16:43:15 by saladin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ alias norme='norminette -R CheckForbiddenSourceHeader' 																	#Normine
 alias valg='gcc *.c -ggdb3 && valgrind --show-leak-kinds=all --leak-check=full --track-origins=yes ./a.out && rm a.out'	#Compiles all .c files in the current directory and runs the executable trough valgrind then deletes it.
 alias valga='gcc *.c -ggdb3 && valgrind --show-leak-kinds=all --leak-check=full --track-origins=yes ./a.out' 			#Compiles all .c files in the current directory and runs the executable trough valgrind with any arguments you give it.
 alias audus-docker-pwd='docker run -it --rm --init -v "$PWD:/pwd" saladuit/audus:latest sh -c "cd /pwd; bash"'
-alias codam-docker-pwd='docker run -it --rm --init -v "$PWD:/pwd" saladuit/codam:latest sh -c "cd /pwd; bash"'
+alias codam-docker-pwd='docker run -it --rm --init --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -v "$PWD:/pwd" saladuit/codam:latest sh -c "cd /pwd; bash"'
 alias francinette=/Users/safoh/francinette/tester.sh
 alias paco=/Users/safoh/francinette/tester.sh
 # alias norm=norminette $(git ls-tree --name-only HEAD -r | grep '\.[ch]$')
