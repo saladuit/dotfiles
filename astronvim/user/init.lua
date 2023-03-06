@@ -5,7 +5,6 @@
 -- normal format is "key = value". These also handle array like data structures
 -- where a value with no key simply has an implicit numeric key
 local config = {
-
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
@@ -24,10 +23,8 @@ local config = {
     --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     -- },
   },
-
   -- Set colorscheme to use
   colorscheme = "gruvbox",
-
   -- Add highlight groups in any theme
   highlights = {
     -- init = { -- this table overrides highlights in all themes
@@ -37,7 +34,6 @@ local config = {
     --   Normal = { bg = "#000000" },
     -- },
   },
-
   -- set vim options here (vim.<first_key>.<second_key> = value)
   options = {
     opt = {
@@ -84,7 +80,6 @@ local config = {
     "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
     "    ██   ████   ████   ██ ██      ██",
   },
-
   -- Default theme configuration
   default_theme = {
     -- Modify the color palette for the default theme
@@ -128,7 +123,6 @@ local config = {
       ["which-key"] = true,
     },
   },
-
   gitsigns = {
     signs = {
       add = { hl = "GitSignsAdd", text = "▎", numhl = "GitSignsAddNr", linehl = "GitSignsAddLn" },
@@ -186,7 +180,6 @@ local config = {
     virtual_text = true,
     underline = true,
   },
-
   -- Extend LSP configuration
   lsp = {
     -- enable servers that you already have installed without mason
@@ -201,11 +194,12 @@ local config = {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
-             "c",
+          "c",
+          "h",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
-        -- "sumneko_lua",
+        "clangd",
       },
       timeout_ms = 1000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
@@ -243,7 +237,6 @@ local config = {
       -- },
     },
   },
-
   -- Mapping data with "desc" stored directly by vim.keymap.set().
   --
   -- Please use this mappings table to set keyboard mapping since this is the
@@ -266,7 +259,6 @@ local config = {
       -- ["<esc>"] = false,
     },
   },
-
   -- Configure plugins
   plugins = {
     init = {
@@ -282,8 +274,8 @@ local config = {
           require("coverage").setup({
             auto_reload = true,
             auto_reload_timeout_ms = 2000,
-            load_coverage_cb = function (ftype)
-                vim.notify("Loaded " .. ftype .. " coverage")
+            load_coverage_cb = function(ftype)
+              vim.notify("Loaded " .. ftype .. " coverage")
             end,
             highlights = {
               -- customize highlights
@@ -347,7 +339,6 @@ local config = {
       -- ensure_installed = { "python" },
     },
   },
-
   -- LuaSnip Options
   luasnip = {
     -- Extend filetypes
@@ -360,7 +351,6 @@ local config = {
       paths = {},
     },
   },
-
   -- CMP Source Priorities
   -- modify here the priorities of default cmp sources
   -- higher value == higher priority
@@ -375,7 +365,6 @@ local config = {
       path = 250,
     },
   },
-
   -- Customize Heirline options
   heirline = {
     -- -- Customize different separators between sections
@@ -401,7 +390,6 @@ local config = {
     --   },
     -- },
   },
-
   -- Modify which-key registration (Use this with mappings table in the above.)
   ["which-key"] = {
     -- Add bindings which show up as group name
@@ -417,7 +405,6 @@ local config = {
       },
     },
   },
-
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
