@@ -182,6 +182,11 @@ local config = {
   },
   -- Extend LSP configuration
   lsp = {
+    ["server-settings"] = {
+      clangd = {
+        capabilities = { offsetEncoding = "utf-8" },
+      },
+    },
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
