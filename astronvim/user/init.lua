@@ -26,11 +26,6 @@ return {
   },
 
   lsp = {
-    ["server-settings"] = {
-      clangd = {
-        capabilities = { offsetEncoding = "utf-8" },
-      },
-    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
@@ -50,6 +45,13 @@ return {
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
+    },
+    config = {
+      clangd = {
+        capabilities = {
+          offsetEncoding = "utf-8",
+        },
+      },
     },
     -- enable servers that you already have installed without mason
     servers = {
