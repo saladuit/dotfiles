@@ -26,6 +26,11 @@ return {
   },
 
   lsp = {
+    ["server-settings"] = {
+      clangd = {
+        capabilities = { offsetEncoding = "utf-8" },
+      },
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
