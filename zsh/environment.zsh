@@ -55,7 +55,7 @@ then
 	export HOMEBREW_CACHE=/tmp/$USER/Homebrew/Caches
 	export HOMEBREW_TEMP=/tmp/$USER/Homebrew/Temp
 	# Criterion
-	export C_INCLUDE_PATH="$HOME/.brew/Cellar/criterion/2.4.1_1/include":$C_INCLUDE_PATH
+	export C_INCLUDE_PATH="$HOME/.brew/Cellar/criterion/2.4.1_2/include":$C_INCLUDE_PATH
 	export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
 	export PATH="/Users/$USER/.brew/opt/llvm/bin:$PATH"
 fi
