@@ -98,32 +98,6 @@ backforeswitch () {
 zle -N backforeswitch
 bindkey '^Z' backforeswitch
 
-#The git riddle
-function iacp() {
-if [ -z "$3" ]
-then
-	echo "Usage: iacp <name> <link> <comment>"
-else
-	git init
-	git add *
-	git commit -m "$3"
-	git remote add $1 $2
-	git push --set-upstream $1 master
-fi
-}
-
-#The git push
-function acp() {
-if [ -z "$1" ]
-then
-	echo "Usage: acp <comment>"
-else
-	git add .
-	git commit -m "$1"
-	git push
-fi
-}
-
 #Really clear the screen with Ctrl + L
 clearbetter () {
   BUFFER="clear"
@@ -131,25 +105,6 @@ clearbetter () {
 }
 zle -N clearbetter
 bindkey '^L' clearbetter
-
-#Reload ZSH with Ctrl + S
-resourcezsh () {
-  BUFFER="exec -l zsh"
-  zle accept-line -w
-  BUFFER="clear"
-  zle accept-line -w
-}
-zle -N resourcezsh
-bindkey '^S' resourcezsh
-
-#Exit with Ctrl + Q
-ctrlqexit () {
-  BUFFER=":q"
-  zle accept-line -w
-}
-zle -N ctrlqexit
-bindkey '^Q' ctrlqexit
-
 
 # Creates a TAR archive of a file or folder.
 function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }

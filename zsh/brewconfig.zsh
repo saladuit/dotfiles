@@ -11,7 +11,6 @@
 # **************************************************************************** #
 
 # HOMEBREW CONFIG
-# need to make this file systemdependentFIXME
 
 mkdir -p $HOMEBREW_CACHE
 mkdir -p $HOMEBREW_TEMP

@@ -12,7 +12,6 @@
 # **************************************************************************** #
 
 # the main RC file (will be linked to ~/.zshrc)
-#
 source $HOME/repos/dotfiles/zsh/environment.zsh
 eval "$(sheldon source)"
 source $ZSH_CONFIG/options.zsh
