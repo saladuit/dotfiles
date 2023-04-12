@@ -25,6 +25,7 @@ sheldon add zsh-autocomplete --github marlonrichert/zsh-autocomplete
 sheldon add zsh-autosuggestions --github zsh-users/zsh-autosuggestions
 sheldon add oh-my-zsh --github ohmyzsh/ohmyzsh
 sheldon add pure --github sindresorhus/pure --use async.zsh pure.zsh
+sheldon add base16 --github chriskempson/base16-shell
 
 exec zsh
 
