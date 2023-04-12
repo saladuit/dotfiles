@@ -14,11 +14,12 @@
 # the main RC file (will be linked to ~/.zshrc)
 #
 source $HOME/repos/dotfiles/zsh/environment.zsh
+eval "$(sheldon source)"
 source $ZSH_CONFIG/options.zsh
 source $ZSH_CONFIG/functions.zsh
-source $ZSH_CONFIG/aliases.zsh
 source $ZSH_CONFIG/completion.zsh
 source $ZSH_CONFIG/pure.zsh
+source $ZSH_CONFIG/aliases.zsh
 
 # brew integration and config
 if [ -d "${HOME}/.brew" ]
@@ -27,10 +28,8 @@ then
 	mkdir -p ~/goinfre/docker
 fi
 
-eval "$(sheldon source)"
 
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
 fi
-
 alias knisper-cli=/Users/saladin/.local/knisper/bin/knisper-cli.sh
