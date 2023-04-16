@@ -64,6 +64,8 @@ if [ -d "/opt/homebrew/bin" ]
 then 
 export PATH="/opt/homebrew/bin/:$PATH"
 fi
+# Rustlings
+export PATH="$HOME/.cargo/bin:$PATH"
 # History Settings
 export LESSHISTFILE=$LESS_CACHE/less_history
 export HISTFILE=$ZSH_CACHE/zsh_history	#History File Location
