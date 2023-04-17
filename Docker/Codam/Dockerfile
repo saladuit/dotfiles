@@ -1,6 +1,5 @@
 FROM archlinux/archlinux:latest
 
-
 # Install basic programs
 RUN pacman -Syu gcc clang cmake make git gdb valgrind man-pages less base-devel openssh lcov --noconfirm
 
@@ -14,6 +13,13 @@ WORKDIR /home/$user
 # Needed for gdb to work
 ENV DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 
+#install Astronvim and its dependencies
+RUN sudo pacman -Syu --noconfirm bash git lua nodejs npm lazygit bottom python3 go neovim ripgrep python-pip
+RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+RUN sudo pip install compiledb
+RUN git clone https://github.com/saladuit/astronvim_config.git ~/.config/nvim/lua/user
+RUN nvim --headless -c "quitall"
+
 # Install yay
 RUN git clone https://aur.archlinux.org/yay.git \
   && cd yay \
@@ -22,12 +28,6 @@ RUN git clone https://aur.archlinux.org/yay.git \
   # Clean up
   && rm -rf .cache yay
 
-#install Astronvim and its dependencies
-RUN sudo pacman -Syu --noconfirm lua nodejs npm lazygit bottom python3 go neovim ripgrep unzip wget python-pip
-RUN pip install compiledb
-RUN git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-RUN git clone https://github.com/saladuit/astronvim_config.git ~/.config/nvim/lua/user
-RUN nvim --headless -c "autocmd User PackerComplete quitall"
-RUN nvim --headless +"MasonInstall clangd codelldb" +qa 
+#install criterion
 RUN sudo -u makepkg yay -S --mflags --nocheck --noconfirm criterion
 ENV export PATH="/home/makepkg/.local/bin:$PATH"
