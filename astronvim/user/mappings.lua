@@ -20,6 +20,9 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Add header42 keymap
+    ["<leader>h"] = { [[<cmd>lua require('header42.api').insert()<cr>]], desc = "Insert 42 Header" },
   },
   t = {
     -- setting a mapping to false will disable it
