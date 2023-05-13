@@ -60,6 +60,7 @@ then
 	export C_INCLUDE_PATH="/usr/local/include:$C_INCLUDE_PATH"
 	export PATH="/Users/$USER/.brew/opt/llvm/bin:$PATH"
 fi
+
 if [ -d "/opt/homebrew/bin" ]
 then 
 export PATH="/opt/homebrew/bin/:$PATH"
@@ -69,7 +70,7 @@ then
 export PATH="/opt/homebrew/sbin/:$PATH"
 fi
 # Rustlings
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/.cargo/bin"
 # History Settings
 export LESSHISTFILE=$LESS_CACHE/less_history
 export HISTFILE=$ZSH_CACHE/zsh_history	#History File Location
