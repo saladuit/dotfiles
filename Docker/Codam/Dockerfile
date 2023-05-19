@@ -1,7 +1,7 @@
 FROM archlinux/archlinux:latest
 
 # Install basic programs
-RUN pacman -Syu gcc clang cmake make git gdb valgrind man-pages less base-devel openssh lcov --noconfirm
+RUN pacman -Syu gcc clang cmake make git gdb valgrind man-pages less base-devel openssh lcov glibc --noconfirm
 
 # makepkg user and workdir
 ARG user=makepkg
