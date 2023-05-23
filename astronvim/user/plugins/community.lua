@@ -19,4 +19,5 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.completion.copilot-lua-cmp"}
 }
