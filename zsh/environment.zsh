@@ -53,7 +53,7 @@ then
 	export PATH="$HOME/.brew/bin:$PATH"
 	export LIBRARY_PATH="$HOME/.brew/lib:$LIBRARY_PATH"
 	# Set Homebrew temporary folders
-	export HOMEBREW_CACHE="tmp/$USER/Homebrew/Caches"
+	export HOMEBREW_CACHE="/tmp/$USER/Homebrew/Caches"
 	export HOMEBREW_TEMP="/tmp/$USER/Homebrew/Temp"
 	# Criterion
 	export C_INCLUDE_PATH="$HOME/.brew/Cellar/criterion/2.4.1_2/include":$C_INCLUDE_PATH
