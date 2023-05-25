@@ -8,10 +8,10 @@ ColumnLimit: 80
 # Always use tabs for indentation instead of spaces.
 UseTab: Always
 
-# Set the width of a single tab to 2 columns.
-TabWidth: "2"
+# Set the width of a single tab to 4 columns.
+TabWidth: "4"
 
-# IndentWidth: 4 - Enforce 4-space indentation, as per the Norminette.
+# Enforce 4-space indentation, as per the Norminette.
 IndentWidth: "4"
 
 # Place opening braces on a new line (Allman style).
@@ -21,8 +21,11 @@ BreakBeforeBraces: Allman
 # e.g., "if (condition)" instead of "if(condition)"
 SpaceBeforeParens: ControlStatements
 
-# AllowShortIfStatementsOnASingleLine: false - One instruction per line, as per the Norminette.
+# One instruction per line, as per the Norminette.
 AllowShortIfStatementsOnASingleLine: false
+
+# Don't put short functions on a single line.
+AllowShortFunctionsOnASingleLine: false
 
 # Do not include a space inside empty parentheses.
 # e.g., "f()" instead of "f( )"
