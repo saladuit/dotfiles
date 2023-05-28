@@ -37,7 +37,10 @@ export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 
 # TODO make it work for Linux and personal mac
-eval "$(/Users/safoh/goinfre/.brew/bin/brew shellenv)"
+if [ -d "/Users/safoh/goinfre/.brew/" ]
+then 
+	eval "$(/Users/safoh/goinfre/.brew/bin/brew shellenv)"
+fi
 
 # perl config
 if [ -d "/home/saladuit" ]
@@ -50,7 +53,11 @@ then
 fi 
 
 # Rustlings
-export PATH="$PATH:$HOME/.cargo/bin"
+if [ -d "$HOME/.cargo/bin" ]
+then
+	export PATH="$PATH:$HOME/.cargo/bin"
+fi
+
 # History Settings
 export LESSHISTFILE=$LESS_CACHE/less_history
 export HISTFILE=$ZSH_CACHE/zsh_history	#History File Location
