@@ -12,7 +12,10 @@
 # **************************************************************************** #
 
 # the main RC file (will be linked to ~/.zshrc)
-source $HOME/repos/dotfiles/zsh/environment.zsh
+if [ -z "$ENVIRONMENT_ZSH_LOADED" ]; then
+    export ENVIRONMENT_ZSH_LOADED=1
+    source $HOME/repos/dotfiles/zsh/environment.zsh
+fi
 eval "$(sheldon source)"
 source $ZSH_CONFIG/options.zsh
 source $ZSH_CONFIG/functions.zsh
@@ -23,7 +26,7 @@ source $ZSH_CONFIG/aliases.zsh
 # brew integration and config
 if [ -d "${HOME}/.brew" ]
 then
-	source $ZSH_CONFIG/brewconfig.zsh
+	# source $ZSH_CONFIG/brewconfig.zsh
 	mkdir -p ~/goinfre/docker
 fi
 
