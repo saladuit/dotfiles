@@ -42,6 +42,11 @@ then
 	eval "$(/Users/safoh/goinfre/.brew/bin/brew shellenv)"
 fi
 
+if [ -d "/opt/homebrew/bin" ]
+then
+	export PATH="/opt/homebrew/bin:$PATH"
+fi
+
 # perl config
 if [ -d "/home/saladuit" ]
 then 

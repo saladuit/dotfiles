@@ -18,12 +18,13 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.completion.copilot-lua" },
-  { -- further customize the options set by the community
+  {
+    -- further customize the options set by the community
     "copilot.lua",
     opts = {
       suggestion = {
         keymap = {
-          accept = "<Tab>",
+          accept = "<C-e>",
           accept_word = false,
           accept_line = false,
           next = "<C-.>",
