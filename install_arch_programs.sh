@@ -37,6 +37,9 @@ sudo cpan install Neovim::Ext
 pacman -Syyuu
 pacman -Rnsc $(pacman -Qqdt)
 
+@echo "install linux-firmware"
+@echo "Don't install networkmanager"
+@echo "Go with xorg and proprietary nvidia drivers"
 @echo "Install cloned repos manually with \"makedpkg -si\""
 @echo "Don't forget to enable aur support"
 @echo "install brave-bin steam spoitfy-launcher"
