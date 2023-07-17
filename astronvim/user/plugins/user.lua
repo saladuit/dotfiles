@@ -5,13 +5,13 @@ return {
   {
     "vinicius507/header42.nvim",
     config = function()
-      local header = require('header42')
-      header.setup({
+      local header = require "header42"
+      header.setup {
         login = "safoh",
         email = "safoh@student.codam.nl",
-      })
+      }
     end,
-  }
+  },
   -- {
   --   "ray-x/lsp_signature.nvim",
   --   event = "BufRead",
