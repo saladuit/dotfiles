@@ -48,3 +48,6 @@ BinPackArguments: true
 
 # Place all function parameters on one line if they fit within the column limit.
 BinPackParameters: true
+
+# Don't break template declarations
+AlwaysBreakTemplateDeclarations: "Yes"
