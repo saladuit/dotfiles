@@ -34,4 +34,3 @@ fi
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
 fi
-alias knisper-cli=/Users/saladin/.local/knisper/bin/knisper-cli.sh
