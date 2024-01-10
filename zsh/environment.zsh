@@ -72,7 +72,8 @@ export SAVEHIST=1000000			#Maximum number of items for the history file
 # 42 Header Information
 export INTRAUSER=safoh				#Change this to your Intra Username
 export MAIL="safoh@student.codam.nl"	#Change this to your 42 Email Adress (username@student.codam.nl for Codam Students)
-
+export USER42="safoh"
+export EMAIL42="safoh@student.codam.nl"
 export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 export DATE=$(date +%d-%m-%Y)
 export EDITOR="nvim"
