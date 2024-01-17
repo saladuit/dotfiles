@@ -30,6 +30,9 @@ then
 	mkdir -p ~/goinfre/docker
 fi
 
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	alias open='xdg-open'
+fi
 
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
