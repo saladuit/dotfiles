@@ -51,3 +51,6 @@ BinPackParameters: true
 
 # Don't break template declarations
 AlwaysBreakTemplateDeclarations: "Yes"
+
+# NamespaceIndentation:
+NamespaceIndentation: All

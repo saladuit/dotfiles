@@ -23,6 +23,9 @@ source $ZSH_CONFIG/completion.zsh
 source $ZSH_CONFIG/pure.zsh
 source $ZSH_CONFIG/aliases.zsh
 
+export USER42="safoh"
+export EMAIL42="safoh@student.codam.nl"
+export SCHOOL42="codam"				## example 42/1337 (optional)
 # brew integration and config
 if [ -d "${HOME}/.brew" ]
 then
@@ -37,3 +40,5 @@ fi
 if [ -f /etc/zsh.cnf ]; then
  . /etc/zsh.cnf
 fi
+
+alias cclean='bash ~/Cleaner_42.sh'
