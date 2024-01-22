@@ -34,7 +34,7 @@ then
 fi
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-	alias open='xdg-open'
+	alias code='xdg-open'
 fi
 
 if [ -f /etc/zsh.cnf ]; then
