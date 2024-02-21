@@ -15,14 +15,6 @@
 # useful only for Mac OS Silicon M1, 
 # still working but useless for the other platforms
 
-docker() {
- if [[ `uname -m` == "arm64" ]] && [[ "$1" == "run" || "$1" == "build" ]]; then
-    /usr/local/bin/docker "$1" --platform linux/amd64 "${@:2}"
-  else
-     /usr/local/bin/docker "$@"
-  fi
-}
-
 # Top ten memory hogs
 # http://www.commandlinefu.com/commands/view/7139/top-ten-memory-hogs
 memtop() {ps -eorss,args | gsort -nr | gpr -TW$COLUMNS | ghead}
